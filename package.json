@@ -1,0 +1,24 @@
+{
+  "name": "khole_app",
+  "version": "0.0.1",
+  "description": "An music blog with a competitive component",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "Jacob Barnett",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "chai-http": "^1.0.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-simple-mocha": "^0.4.0",
+    "mocha": "^2.2.1"
+  },
+  "dependencies": {
+    "express": "^4.12.2",
+    "mongoose": "^3.8.25"
+  }
+}
