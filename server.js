@@ -9,9 +9,7 @@ mongoose.connect(process.env.MONG_URI || 'mongodb://localhost/muder_music');
 
 app.use(bodyparser.json());
 
-app.get('/', function(req, res) {
-  res.send('hello world');
-});
+app.use(express.static(__dirname + '/build'));
 
 //returns array of all users
 app.get('/user', function(req, res) {
@@ -28,6 +26,16 @@ app.post('/user', function(req, res) {
   newUser.save(function(err, data) {
     if (err) res.status(500).send({msg: 'could not save user'});
     res.json(data);
+  });
+});
+
+//updates and existing user
+app.put('/user/:id', function(req, res) {
+  var updatedUser =  req.body;
+  delete updatedUser._id;
+  User.update({_id: req.params.id}, updatedUser, function(err) {
+    if (err) return res.status(500).send({msg: 'could not update user'});
+    res.json(req.body);
   });
 });
 
