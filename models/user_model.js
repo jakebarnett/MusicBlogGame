@@ -5,6 +5,7 @@ var userSchema = new Schema ({
   username: 'String',
   email: 'String',
   avatar: 'String',
+  bio: 'String',
   songs: [{type: Schema.Types.ObjectId, ref:'Song'}]
 });
 
