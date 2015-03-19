@@ -1,7 +1,11 @@
 module.exports = function(app) {
-  app.controller('songsController', ['$scope', 'resource', function($scope, resource) {
+  app.controller('songsController', ['$scope', '$sce', 'resource', function($scope, $sce, resource) {
 
     $scope.songs = [];
+
+    $scope.deliberatelyTrustDangerousSnippet = function(html) {
+      return $sce.trustAsHtml(html);
+    };
 
     var Song = resource('songs');
 
