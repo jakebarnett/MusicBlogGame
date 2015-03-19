@@ -1,0 +1,15 @@
+<main data-ng-controller="songsController" data-ng-init="getAllSongs()">
+  <h1>
+    This is the songs view!
+  </h1>
+
+  <section data-add-new-song-directive></section>
+
+  <ul data-ng-repeat="song in songs">
+    <li>{{song.songUrl}}</li>
+    <li>{{song.points}}</li>
+    <li>{{song.postedBy}}</li>
+    <li data-vote-on-song-directive></li>
+
+  </ul>
+</main>
