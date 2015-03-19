@@ -23,15 +23,15 @@ musicApp.config(['$routeProvider', function($routeProvider) {
     templateUrl: 'templates/users/users_template.html',
     controller: 'usersController'
   })
+  .when('/create_user', {
+    templateUrl: 'templates/users/create_user_template.html',
+  })
   .when('/songs', {
     templateUrl: 'templates/songs/songs_template.html',
     controller: 'songsController'
   })
-  .when('/about', {
-    templateUrl: 'templates/about.html'
-  })
   .when('/', {
-    redirectTo: '/users'
+    redirectTo: '/songs'
   })
   .otherwise({
     templateUrl: 'templates/four_oh_four.html'
