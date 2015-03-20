@@ -2,8 +2,10 @@
 
 require('angular/angular');
 require('angular-route');
+require('angular-cookies');
+require('angular-base64');
 
-var musicApp = angular.module('musicApp', ['ngRoute']);
+var musicApp = angular.module('musicApp', ['ngRoute', 'base64', 'ngCookies']);
 
 //services
 require('./services/resource_service')(musicApp);
@@ -24,7 +26,7 @@ musicApp.config(['$routeProvider', function($routeProvider) {
     controller: 'usersController'
   })
   .when('/create_user', {
-    templateUrl: 'templates/users/create_user_template.html',
+    templateUrl: 'templates/users/create_user_template.html'
   })
   .when('/songs', {
     templateUrl: 'templates/songs/songs_template.html',

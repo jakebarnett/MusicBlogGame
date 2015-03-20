@@ -4,13 +4,38 @@ var app = express();
 var User = require('./models/user_model');
 var Song = require('./models/song_model');
 var bodyparser = require('body-parser');
-var moment = require('moment')
+var moment = require('moment');
+var passport = require('passport');
+var FacebookStrategy = require('passport-facebook').Strategy;
+
 
 mongoose.connect(process.env.MONG_URI || 'mongodb://localhost/muder_music');
 
 app.use(bodyparser.json());
 
 app.use(express.static(__dirname + '/build'));
+
+
+
+// ===================
+
+passport.use(new FacebookStrategy({
+    clientID: '1567323463521352',
+    clientSecret: 'aa7840c2655f4cf863322179107cf873',
+    callbackURL: 'http://localhost:3000/auth/facebook/callback'
+},
+  function(accessToken, refreshToken, profile, done) {
+    console.log('your token is: ' + accessToken + "-----your name is :" + profile.displayName);
+    done(null, user);
+  }
+));
+app.get('/auth/facebook', passport.authenticate('facebook'));
+
+app.get('/auth/facebook/callback',
+  passport.authenticate('facebook',{successRedirect: 'localhost:3000', failureRedirect: 'localhost:3000'} ,
+  function () {}));
+
+//=========================
 
 //returns array of all users
 app.get('/user', function(req, res) {
@@ -65,6 +90,7 @@ app.get('/songs', function(req, res) {
   Song.find()
   .where('postedDate').equals(today)
   .sort('-points')
+  .populate('postedBy')
   .exec(function(err, data) {
     if (err) console.log(err);
     res.json(data);
