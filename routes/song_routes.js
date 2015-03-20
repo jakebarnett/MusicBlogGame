@@ -1,3 +1,4 @@
+var User = require('../models/user_model');
 var Song = require('../models/song_model');
 var bodyparser = require('body-parser');
 var express = require('express');
@@ -43,7 +44,7 @@ module.exports = function(app) {
     var updatedSong =  req.body;
     delete updatedSong._id;
     Song.update({_id: req.params.id}, updatedSong, function(err) {
-      if (err) console.log (err);
+      if (err) console.log(err);
       res.json(req.body);
     });
   });

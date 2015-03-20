@@ -8,6 +8,7 @@ var moment = require('moment');
 
 var userRoutes = require('./routes/user_routes');
 var songRoutes = require('./routes/song_routes');
+var userSongsRoutes = require('./routes/usersongs_routes');
 
 mongoose.connect(process.env.MONG_URI || 'mongodb://localhost/muder_music');
 
@@ -19,6 +20,7 @@ var router =  express.Router();
 
 userRoutes(router);
 songRoutes(router);
+userSongsRoutes(router);
 
 app.use('/', router);
 
