@@ -1,15 +1,17 @@
-<main data-ng-controller="songsController" data-ng-init="getAllSongs()">
-  <h1>
-    This is the songs view!
-  </h1>
-
+<section data-ng-controller="songsController" data-ng-init="getAllSongs()">
   <section data-add-new-song-directive></section>
-
-  <ul data-ng-repeat="song in songs">
+  <ul data-ng-repeat="song in songs" class="song-style-wrapper center-box">
     <li ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)">{{song.songUrl}}</li>
-    <li>{{song.points}}</li>
     <li>{{song.postedBy}}</li>
     <li data-vote-on-song-directive></li>
-
+    <section class="vote-box">
+      <span data-ng-click="upVote(song); save(song)">
+        <img src="img/like.png" alt="like picture btn" class="icon-img">
+      </span>
+      <span data-ng-click="downVote(song); save(song)">
+        unlike
+      </span>
+      <div>{{song.points}}</div>
+    </section>
   </ul>
-</main>
+</secstion>

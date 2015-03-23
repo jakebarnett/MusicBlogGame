@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Muder Music</title>
-</head>
-<body data-ng-app="musicApp">
-	<h1>THIS IS THE APP</h1>
-	<main data-ng-view></main>
-  <script src="bundle.js"></script>
-</body>
+  <head>
+  <meta charset="UTF-8">
+    <title>Muder Music</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/module.css">
+    <link rel="stylesheet" href="css/state.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/animate.min.css">
+  </head>
+  <body data-ng-app="musicApp" class="create-usr-img">
+    <header class="main-header box-fix top-fixed flex-container">
+      <h1 class="app-logo">Muder Music</h1>
+<!--       <div class="upload-song-div">
+        <label for="upload"></label>
+        <input type="text" name="upload">
+      </div>
+      <img src="img/upload.png" class="upload-img"> -->
+    </header>
+    <nav class="main-nav-bar box-fix center-box top-fixed">
+      <section class="nav-menu flex-container center-box">
+        <ul class="nav-list center-box">
+          <li>Home</li>
+          <li>Profile</li>
+          <li>Menu</li>
+        </ul>
+      </section>
+    </nav>
+    <main class="main-content center-box" data-ng-view></main>
+<!--     <aside>
+      <section class="advertisement">
+        <h1>Get on Muder Music and upload your songs.</h1>
+      </section>
+    </aside> -->
+    <footer>
+      <p>&copy; 2015 Muder Music</p>
+    </footer>
+    <script src="bundle.js"></script>
+  </body>
 </html>

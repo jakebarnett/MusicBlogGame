@@ -1,0 +1,108 @@
+.full-width{
+  width: 100%;
+}
+
+main{
+  width: 80%;
+}
+
+.songs-view{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-fix{
+  box-sizing: border-box;
+  padding: .2em;
+}
+
+.btn-fix{
+  text-align: center;
+  font-size: 1.1em;
+  outline: none;
+  padding: .2em;
+  border-radius: 1em;
+  border: none;
+}
+
+.flex-container{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: stretch;
+}
+
+.center-box{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-box{
+  width: 60%;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center;
+}
+
+.user-position{
+  box-sizing: border-box;
+  padding: 1em;
+  margin-top: 2em;
+  background: rgb(19, 18, 18);
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.top-fixed{
+  position: fixed;
+  left: 0; top: 0;
+}
+
+.left-text{
+  text-align: left;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.icon-img{
+  width:10%;
+  cursor: pointer;
+}
+
+.white-text{
+  color: antiquewhite;
+}
+
+.float-left{
+  float: left;
+  margin-left: 1.4em;
+}
+
+.upload-song-div{
+  float: right;
+}
+
+.advertisement{
+  margin-top: 1em;
+  width: 100%;
+  height: auto;
+}
+
+.advertisement h1{
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.user-info{
+  margin-top: 0;
+}

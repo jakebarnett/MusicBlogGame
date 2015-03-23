@@ -1,9 +1,13 @@
-<form name="newUserForm">
-  <label for="newUserUsername">Username</label>
-  <input type="text" id="newUserUsername" data-ng-model="newUser.username">
-  <label for="newUserUsername">Email</label>
-  <input type="text" id="newUserEmail" data-ng-model="newUser.email">
-  <label for="newUserAvatar">Avatar Url</label>
-  <input type="text" id="newUserAvatar" data-ng-model="newUser.avatar">
-  <button type="submit" data-ng-click ="createUser(newUser)">Save User</button>
+<form class="createUser-form" name="newUserForm">
+  <fieldset>
+    <legend>Create User</legend>
+    <label for="newUserUsername">Username</label>
+    <input type="text" id="newUserUsername" data-ng-model="newUser.username">
+    <label for="newUserUsername">Email</label>
+    <input type="text" id="newUserEmail" data-ng-model="newUser.email"
+           placeholder="name@email.com">
+    <label for="newUserAvatar">Avatar Url</label>
+    <input type="text" id="newUserAvatar" data-ng-model="newUser.avatar">
+    <button type="submit" class="save-btn" data-ng-click ="createUser(newUser)">Save User</button>
+  </fieldset>
 </form>

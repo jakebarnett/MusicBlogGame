@@ -1,0 +1,140 @@
+/*DESKTOP*/
+@media (max-width: 900px){
+}
+
+
+/*TABLET*/
+@media (max-width: 1100px){
+  .user-container{
+    margin-top: -3.5em;
+  }
+
+  .main-content{
+    width: 100%;
+  }
+
+  .save-btn{
+    width: 50%;
+    box-shadow: 0 0 .2em;
+  }
+  .create-user-wrapper{
+    width: 80%;
+  }
+
+  .song-style-wrapper{
+    width: 95%;
+  }
+}
+
+
+/*MOBILE*/
+@media (max-width: 600px){
+  .main-header{
+    width: 100%;
+  }
+
+  .main-nav-bar{
+    height: auto;
+    display: none;
+  }
+
+  .app-logo{
+    text-align: center;
+    transition: text-align .5s;
+  }
+
+  .flex-container{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .ng-scope{
+    margin-top: -1em;
+    width: 100%;
+    transition: all .2s;
+  }
+
+  /*form*/
+  .ng-valid,
+  .ng-valid-email{
+    border: none;
+    outline: none;
+    display: block;
+    width: 90%;
+    transition: all .3s;
+  }
+
+  .nav-btn{
+    font-size: 1.5em;
+    margin: .2em;
+  }
+
+  .save-btn{
+    width: 50%;
+    box-shadow: 0 0 .2em;
+  }
+
+  .user-container{
+    margin-top: 4.3em;
+  }
+
+  .user-position{
+    width: 100vw;
+  }
+
+  .edit-user-btn{
+    width: 25%;
+    margin-left: .3em;
+  }
+
+  img{
+    width: 20%;
+    height: 5em;
+  }
+
+  .usr-info{
+    margin-left: 5.5em;
+    margin-top: -4em;
+    font-size: 1.2em;
+  }
+
+  .enter-song-form{
+    margin-top: 8em;
+  }
+
+  .ng-binding{
+    width: 100%;
+  }
+
+  iframe{
+    width: 90%;
+    margin-top: 2em;
+  }
+
+  .vote-box{
+    width: 20%;
+    position: static;
+    top: 2em;
+    left: .7em;
+  }
+
+  .d-block{
+    display: inline-block;
+  }
+
+  .user-form{
+    margin-top: 12.5em;
+  }
+
+  .create-user-wrapper{
+    width: 90%;
+  }
+
+  .title-bg{
+    margin-top: -2.8em;
+  }
+}
