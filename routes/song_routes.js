@@ -3,8 +3,9 @@ var Song = require('../models/song_model');
 var bodyparser = require('body-parser');
 var express = require('express');
 var moment = require('moment');
+var eat_auth = require('../lib/eat_auth');
 
-module.exports = function(app) {
+module.exports = function(app, appSecret) {
 
   express.Router().use(bodyparser.json());
 
@@ -28,7 +29,7 @@ module.exports = function(app) {
   });
 
   //gets all songs posted same day
-  app.get('/songs', function(req, res) {
+  app.get('/songs', eat_auth(appSecret), function(req, res) {
     var today = moment().format('MM DD YY');
     Song.find()
     .where('postedDate').equals(today)

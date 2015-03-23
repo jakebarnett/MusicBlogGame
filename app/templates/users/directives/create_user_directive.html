@@ -1,9 +1,15 @@
 <form name="newUserForm">
   <label for="newUserUsername">Username</label>
   <input type="text" id="newUserUsername" data-ng-model="newUser.username">
+
   <label for="newUserUsername">Email</label>
   <input type="text" id="newUserEmail" data-ng-model="newUser.email">
+
   <label for="newUserAvatar">Avatar Url</label>
   <input type="text" id="newUserAvatar" data-ng-model="newUser.avatar">
+
+  <label for="newUserPassword">Password</label>
+  <input type="password" id="newUserPassword" data-ng-model="newUser.password">
+
   <button type="submit" data-ng-click ="createUser(newUser)">Save User</button>
 </form>
