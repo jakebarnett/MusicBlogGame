@@ -11,7 +11,7 @@ var userSchema = new Schema ({
   username: 'String',
   avatar: 'String',
   bio: 'String',
-  //songs: [{type: Schema.Types.ObjectId, ref:'Song'}]
+  songs: 'String'
 });
 
 userSchema.methods.generateHash = function(password) {
@@ -23,7 +23,7 @@ userSchema.methods.validPassword = function(password) {
 };
 
 userSchema.methods.generateToken = function(appSecret, callback) {
-  eat.encode({id: this._id, timestamp: new Date()}, appSecret, callback);
+  eat.encode({id: this._id, timestamp: new Date(), username:this.username}, appSecret, callback);
 };
 
 module.exports = mongoose.model('User', userSchema);

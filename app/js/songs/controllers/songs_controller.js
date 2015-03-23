@@ -30,7 +30,6 @@ module.exports = function(app) {
     };
 
     $scope.addNew = function(song) {
-      song.postedBy = '55108b3ec1d1be8225f208f4',
       Song.create(song, function(data) {
         $scope.songs.push(data);
       });
