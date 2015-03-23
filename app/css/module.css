@@ -44,7 +44,7 @@
   background-repeat: no-repeat;
   background-position: cesnter;
   background-attachment: fixed;
-/*  background-color: grey;*/
+  background-color: honeydew;
   background-blend-mode: multiply;
 }
 
@@ -128,8 +128,6 @@
 }
 
 .usr-info{
-  margin-left: 13em;
-  margin-top: -5em;
   text-align: left;
   margin-bottom: 10em;
   margin: 0;

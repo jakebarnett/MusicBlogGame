@@ -29,6 +29,11 @@
   .song-style-wrapper{
     width: 95%;
   }
+
+  .usr-info{
+    margin-top: .5em;
+    font-size: 1.2em;
+  }
 }
 
 
@@ -106,7 +111,7 @@
   }
 
   .user-position{
-    overflow: hidden;
+    height: 10em;
     width: 100vw;
   }
 
@@ -116,13 +121,12 @@
   }
 
   img{
-    width: 20%;
-    height: 5em;
+    border-radius: 0;
+    width: 30%;
   }
 
   .usr-info{
-    margin-left: 5.5em;
-    margin-top: -4em;
+    margin-top: .5em;
     font-size: 1.2em;
   }
 

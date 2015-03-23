@@ -3,7 +3,6 @@
     <ul data-ng-repeat="user in users" class="center-box usr-in-usr">
       <section class="user-position">
         <img src={{user.avatar}}>
-<!--         <button class="edit-user-btn btn-fix" data-ng-click="editToggle(user)" data-ng-if = "!user.editing">Edit User</button> -->
         <ul class="usr-info full-width white-text">
           <li>{{user.username}}</li>
           <li>{{user.email}}</li>
@@ -20,3 +19,25 @@
     </ul>
   </section>
 </main>
+
+<!--
+<main class="main-content center-box" data-ng-controller="usersController" data-ng-init='getAllUsers()'>
+  <section class="user-container ">
+    <section data-ng-repeat="user in users" class="user-position">
+      <img src={{user.avatar}}>
+      <div class="usr-info full-width white-text">
+        <p>{{user.username}}</p>
+        <p>{{user.email}}</p>
+      </div>
+    </section>
+    <section>
+      <form data-ng-if="user.editing" class="user-form animated zoomIn text-center">
+        <label for="user{{user._id}}">Edit User</label>
+        <input class="center" type="text" id="user{{user._id}}" data-ng-model="user.avatar">
+        <button class="center type-submit button" type="submit" data-ng-click="save(user)">Save Changes</button>
+        <button class="center type-button button" type="button" data-ng-click="editToggle(user)">Cancel</button>
+      </form>
+    </section>
+  </section>
+</main>
+ -->
