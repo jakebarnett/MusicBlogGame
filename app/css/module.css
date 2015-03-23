@@ -34,7 +34,7 @@
   color: white;
   display: inline;
   margin-right: 2em;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 /*create user BODY*/
@@ -42,9 +42,9 @@
 /*  background: url(../img/darklight.png);*/
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: cesnter;
   background-attachment: fixed;
-  background-color: anitiquewhite;
+/*  background-color: grey;*/
   background-blend-mode: multiply;
 }
 

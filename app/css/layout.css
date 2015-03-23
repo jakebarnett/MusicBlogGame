@@ -2,10 +2,6 @@
   width: 100%;
 }
 
-main{
-  width: 80%;
-}
-
 .songs-view{
   width: 80%;
   margin-left: auto;
@@ -75,7 +71,7 @@ main{
 }
 
 .icon-img{
-  width:10%;
+  width: 99%;
   cursor: pointer;
 }
 
@@ -105,4 +101,38 @@ main{
 
 .user-info{
   margin-top: 0;
+}
+
+.vote-box{
+  border-right: 1px solid black;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  width: 7%;
+  margin-top: -15.2em;
+  float: left;
+  margin-left: 1.5em;
+  background: rgb(0, 170, 129);
+  height: 13em;
+  z-index: -1;
+}
+
+/*videos en la pagina pricipal*/
+.ng-binding{
+  float: right;
+  width: 90%;
+}
+
+.flex-center{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 3.5em;
+}
+
+.song-points{
+  font-size: 1.3em;
+  margin-top: 1em;
 }

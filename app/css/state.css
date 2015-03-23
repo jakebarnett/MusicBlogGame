@@ -1,6 +1,6 @@
 input:focus{
   box-shadow: 0 0 .1em white;
-  border: 2px solid rgba(0, 170, 129, 1);
+  border: 1px solid rgba(0, 170, 129, 1);
 }
 
 .inputUrl:focus{
@@ -13,9 +13,4 @@ input:focus{
 
 .edit-user-btn:active{
   box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
-}
-
-.icon-img:hover{
-  width:5%;
-  transition: width .2s;
 }

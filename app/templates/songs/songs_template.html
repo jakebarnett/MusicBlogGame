@@ -4,14 +4,16 @@
     <li ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)">{{song.songUrl}}</li>
     <li>{{song.postedBy}}</li>
     <li data-vote-on-song-directive></li>
-    <section class="vote-box">
-      <span data-ng-click="upVote(song); save(song)">
-        <img src="img/like.png" alt="like picture btn" class="icon-img">
-      </span>
-      <span data-ng-click="downVote(song); save(song)">
-        unlike
-      </span>
-      <div>{{song.points}}</div>
+    <section class="vote-box animated bounceInDown">
+      <div class="song-points" title="total points">{{song.points}}</div>
+      <section class="flex-center m-position">
+        <div data-ng-click="upVote(song); save(song)">
+          <img src="img/like.png" alt="like picture btn" class="icon-img" title="up vote this song">
+        </div>
+        <div data-ng-click="downVote(song); save(song)">
+          <img src="img/unlike.png" alt="unlike picture btn" class="icon-img" title="down vote this song">
+        </div>
+      </section>
     </section>
   </ul>
 </secstion>
