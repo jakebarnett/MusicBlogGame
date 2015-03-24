@@ -20,16 +20,22 @@
           <input class="main-search" type="text" name="search">
         </li>
         <li>
-          <img class="search-img" src="img/search.png" alt="">
+          <img class="search-img" src="img/search.png" alt="search icon image">
         </li>
         <li>
-          <img class="settings-img" src="img/settings.png">
+          <img class="settings-img" src="img/settings.png" alt="settings icon image">
         </li>
       </ul>
+      <section class="menu-show">
+        <h2 class="menu-icon">&#9776;</h2>
+      </section>
     </header>
-    <nav class="main-nav-bar box-fix center-box top-fixed">
-      <section class="nav-menu flex-container center-box">
-        <ul class="nav-list center-box">
+    <section class="settings-box">
+      <h3>Log out</h3>
+    </section>
+    <nav class="main-nav-bar box-fix top-fixed">
+      <section class="nav-menu flex-container">
+        <ul class="nav-list">
           <li>Home</li>
           <li>Profile</li>
           <li>Menu</li>
@@ -37,14 +43,10 @@
       </section>
     </nav>
     <main class="main-content center-box" data-ng-view></main>
-<!--     <aside>
-      <section class="advertisement">
-        <h1>Get on Muder Music and upload your songs.</h1>
-      </section>
-    </aside> -->
     <footer>
       <p>&copy; 2015 Muder Music</p>
     </footer>
     <script src="bundle.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

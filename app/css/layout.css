@@ -70,15 +70,6 @@
   text-align: center;
 }
 
-.icon-img{
-  width: 99%;
-  cursor: pointer;
-}
-
-.white-text{
-  color: antiquewhite;
-}
-
 .float-left{
   float: left;
   margin-left: 1.4em;
@@ -86,17 +77,6 @@
 
 .upload-song-div{
   float: right;
-}
-
-.advertisement{
-  margin-top: 1em;
-  width: 100%;
-  height: auto;
-}
-
-.advertisement h1{
-  text-align: center;
-  font-size: 1.2em;
 }
 
 .vote-box{
@@ -141,11 +121,14 @@
 .settings-img{
   margin-top: .5em;
   width: 80%;
+  cursor: pointer;
 }
 
 .search-img{
   margin-top: .5em;
   width: 70%;
+  cursor: pointer;
+  z-index: 50;
 }
 
 .main-search{
@@ -157,4 +140,22 @@
   margin-right: 10em;
   margin-left: 1.5em;
   outline: none;
+}
+
+.settings-box{
+  background: rgb(15, 15, 15);
+  position: fixed;
+  top: 5.5em;
+  right: 0;
+  border: 1px solid black;
+  width: 10%;
+  height: 10em;
+  overflow: hidden;
+}
+
+.settings-box h3{
+  color: antiquewhite;
+  position: absolute;
+  bottom: .5em;
+  right: .5em;
 }

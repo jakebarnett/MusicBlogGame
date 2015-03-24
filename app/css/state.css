@@ -18,3 +18,16 @@ input:focus{
 .icon-img:active{
   width: 95%;
 }
+
+.nav-list li:hover{
+  background: black;
+  color: rgba(0, 170, 129, 1);
+  cursor: pointer;
+  padding: .1em;
+}
+
+.add-song-btn:active{
+  padding: .58em;
+  box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
+}
+

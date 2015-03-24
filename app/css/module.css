@@ -13,28 +13,28 @@
   float: left;
   font-size: 3em;
   color: white;
+  margin-top: .1em;
 }
 
 .main-nav-bar{
   width: 100%;
   height: auto;
-  text-align: center;
-  background-color: black;
-  display: inline-block;
-  margin-top: 3em;
+  background-color: rgb(28, 29, 28);
+  margin-top: 3.7em;
   z-index: 2;
 }
 
 .nav-list{
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 
 .nav-list li{
   color: white;
-  display: inline;
-  margin-right: 2em;
   font-size: 1.5em;
+  display: inline;
+  transition: all .2s;
+  margin: 4.5em;
 }
 
 /*create user BODY*/
@@ -149,6 +149,7 @@
   padding: .6em;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .text-center{
@@ -185,12 +186,32 @@
 
 .title-bg{
   background-color: rgba(0, 170, 129, 0.12);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   width: 98%;
   margin-top: -5em;
-  transition: all .8s;
   overflow: hidden;
   padding-bottom: 1.4em;
+}
+
+.white-text{
+  color: antiquewhite;
+}
+
+.icon-img{
+  width: 99%;
+  cursor: pointer;
+}
+
+/*dont turn on Desktop size*/
+.menu-show{
+  display: none;
+}
+
+.menu-icon{
+  color: rgb(28, 29, 28);
+  cursor: pointer;
+}
+
+/*logout box*//*logout box*//*logout box*//*logout box*/
+.settings-box{
+  display: none;
 }
