@@ -39,6 +39,7 @@
 
 /*create user BODY*/
 .create-usr-img{
+  margin-top: -3.9em;
   background: url(../img/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
