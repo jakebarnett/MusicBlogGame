@@ -14,3 +14,7 @@ input:focus{
 .edit-user-btn:active{
   box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
 }
+
+.icon-img:active{
+  width: 95%;
+}

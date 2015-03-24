@@ -5,6 +5,10 @@
 
 /*TABLET*/
 @media (max-width: 1100px){
+  .app-logo{
+    margin-top: .1em;
+    font-size: 2.5em;
+  }
 
   .vote-box{
     margin-left: 1.1em;
@@ -34,11 +38,24 @@
     margin-top: .5em;
     font-size: 1.2em;
   }
+
+  .settings-img{
+    display: none;
+  }
+
+  .main-search{
+    margin-top: -3em;
+  }
+
+  .heart-icon{
+    width: 30%;
+  }
 }
 
 
 /*MOBILE*/
 @media (max-width: 600px){
+
   .vote-box{
     border: 1px solid black;
     border-top-left-radius: 0;
@@ -131,7 +148,7 @@
   }
 
   .enter-song-form{
-    margin-top: 8em;
+    margin-top: 10em;
   }
 
   .ng-binding{
@@ -161,5 +178,13 @@
 
   .m-position{
     margin-top: 4.2em;
+  }
+
+  .settings-img{
+    display: none;
+  }
+
+  .heart-icon{
+    width: 20%;
   }
 }

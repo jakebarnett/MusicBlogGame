@@ -5,7 +5,8 @@
     <li>{{song.postedBy}}</li>
     <li data-vote-on-song-directive></li>
     <section class="vote-box animated bounceInDown">
-      <div class="song-points" title="total points">{{song.points}}</div>
+      <div class="song-points" title="total points">
+      <img class="heart-icon" src="img/heart.png">{{song.points}}</div>
       <section class="flex-center m-position">
         <div data-ng-click="upVote(song); save(song)">
           <img src="img/like.png" alt="like picture btn" class="icon-img" title="up vote this song">
