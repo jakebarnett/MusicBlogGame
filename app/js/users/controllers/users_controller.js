@@ -26,10 +26,23 @@ module.exports = function(app) {
      });
     };
 
-
     $scope.save = function(user) {
       User.save(user, function() {
         user.editing = false;
+      });
+    };
+
+    $scope.getSongs = function(user) {
+      $http({
+        method:'GET',
+        url: '/userSongs/' + user._id
+      })
+      .error(function(data) {
+        console.log(data);
+      })
+      .success(function(songs) {
+        console.log(songs);
+        user.songs = songs;
       });
     };
 

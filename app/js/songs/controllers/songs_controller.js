@@ -29,6 +29,7 @@ module.exports = function(app) {
       });
     };
 
+
     $scope.addNew = function(song) {
       Song.create(song, function(data) {
         $scope.songs.push(data);

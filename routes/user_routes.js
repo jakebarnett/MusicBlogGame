@@ -24,7 +24,7 @@ module.exports = function(app, passport, appSecret) {
     newUser.username = req.body.username;
     newUser.avatar = req.body.avatar
     newUser.save(function(err, user) {
-      if (err)  res.status(500).send({msg: 'could not save user'}) //console.log(err);
+      if (err) res.status(500).send({msg: 'could not save user'}) //console.log(err);
 
       user.generateToken(appSecret, function(err, token) {
         if (err) return res.status(500).send({msg: 'could not generate token'});
