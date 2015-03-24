@@ -5,6 +5,21 @@ module.exports = function(app) {
     $scope.users = [];
 
     var User = resource('user');
+
+    $scope.getUser = function(user) {
+      $http.defaults.headers.common['eat'] = $cookies.eat;
+      $http({
+        method: 'GET',
+        url: '/user/currentuser'
+      })
+      .error(function(data) {
+       console.log(data);
+      })
+      .success(function(data) {
+        $scope.user = data;
+      });
+    };
+
     $scope.getAllUsers = function() {
       User.getAll(function(data) {
         $scope.users = data;

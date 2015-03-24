@@ -37,6 +37,10 @@ musicApp.config(['$routeProvider', function($routeProvider) {
   .when('/', {
     redirectTo: '/songs'
   })
+  .when('/profile', {
+    templateUrl: 'templates/users/profile_template.html',
+    controller: 'usersController'
+  })
   .otherwise({
     templateUrl: 'templates/four_oh_four.html'
   })
