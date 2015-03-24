@@ -8,11 +8,12 @@ module.exports = function(app) {
   express.Router().use(bodyparser.json());
 
   //gets all songs posted by a user
-  app.get('/userSongs/:userId', function(req, res) {
+  app.get('/userSongs/:username', function(req, res) {
     Song.find()
-    .where('postedBy').equals(req.params.userId)
+    .where('postedBy').equals(req.params.username)
     .exec(function(err, data) {
       if (err) console.log(err);
+      console.log(data);
       res.json(data);
     });
   });

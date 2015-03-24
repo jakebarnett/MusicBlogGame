@@ -16,6 +16,11 @@
           <button class="center type-button button" type="button" data-ng-click="editToggle(user)">Cancel</button>
         </form>
       </li>
+      <li data-ng-init=getSongs(user)>
+        <ul data-ng-repeat='song in user.songs'>
+          <li>{{song}}</li>
+        </ul>
+      </li>
     </ul>
   </section>
 </main>

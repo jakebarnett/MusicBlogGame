@@ -18,6 +18,8 @@ require('./songs/controllers/songs_controller.js')(musicApp);
 require('./users/directives/create_user_directive')(musicApp);
 require('./songs/directives/vote_on_song_directive')(musicApp);
 require('./songs/directives/add_new_song_directive')(musicApp);
+require('./users/directives/user_songs_directive')(musicApp);
+
 
 musicApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider

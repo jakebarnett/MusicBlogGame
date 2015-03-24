@@ -12,9 +12,9 @@ module.exports = function(app, appSecret) {
 
   //creates a song
   app.post('/songs', eat_auth(appSecret), function(req, res) {
-    console.log('routerUser:' + req.user.username);
+    //console.log('routerUser:' + req.user);
     var newSong = new Song(req.body);
-    newSong.postedBy = req.user.username;
+    newSong.postedBy = req.user._id;
     newSong.save(function(err, data) {
       if (err) console.log(err); //res.status(500).send({msg: 'could not save song'});
 
@@ -23,14 +23,27 @@ module.exports = function(app, appSecret) {
   });
 
   //gets all songs posted by a user
-  app.get('/userSongs/:userId', function(req, res) {
+  app.get('/userSongs/:_id', function(req, res) {
     Song.find()
-    .where('postedBy').equals(req.params.userId)
+    .where('postedBy').equals(req.params._id)
+    .select('points')
+    .select('songUrl')
     .exec(function(err, data) {
       if (err) console.log(err);
       res.json(data);
     });
   });
+
+  // //get a song points from a user
+  // app.get('/userSongPoints/:userId', function(req, res) {
+  //   Song.find()
+  //   .where('postedBy').equals(req.params.userId)
+  //   .select('points')
+  //   .exec(function(err, data) {
+  //     if (err) console.log(err);
+  //     res.json(data);
+  //   });
+  // });
 
   //gets all songs posted same day
   app.get('/songs', eat_auth(appSecret), function(req, res) {
