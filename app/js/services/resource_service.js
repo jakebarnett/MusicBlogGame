@@ -7,6 +7,7 @@ module.exports = function(app) {
     return function(resourceName) {
     $http.defaults.headers.common['eat'] = $cookies.eat;
       return {
+
         getAll: function(callback) {
           $http({
             method: 'GET',
