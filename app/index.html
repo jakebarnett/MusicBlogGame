@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Muder Music</title>
-</head>
-<body data-ng-app="musicApp">
-	<h1>THIS IS THE APP</h1>
-	<main data-ng-view></main>
-  <script src="bundle.js"></script>
-</body>
+  <head>
+  <meta charset="UTF-8">
+    <title>Muder Music</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/module.css">
+    <link rel="stylesheet" href="css/state.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/animate.min.css">
+  </head>
+  <body data-ng-app="musicApp" class="create-usr-img">
+    <header class="main-header box-fix top-fixed flex-container">
+      <h1 class="app-logo">Muder Music</h1>
+      <ul class="header-nav">
+        <li>
+          <input class="main-search" type="text" name="search">
+        </li>
+        <li>
+          <img class="search-img" src="img/search.png" alt="search icon image">
+        </li>
+        <li>
+          <img class="settings-img" src="img/settings.png" alt="settings icon image">
+        </li>
+      </ul>
+      <section class="menu-show">
+        <h2 class="menu-icon">&#9776;</h2>
+      </section>
+    </header>
+    <section class="settings-box">
+      <h3>Log out</h3>
+    </section>
+    <nav class="main-nav-bar box-fix top-fixed">
+      <section class="nav-menu flex-container">
+        <ul class="nav-list">
+          <li>Home</li>
+          <li>Profile</li>
+          <li>Menu</li>
+        </ul>
+      </section>
+    </nav>
+    <main class="main-content center-box" data-ng-view></main>
+    <footer>
+      <p>&copy; 2015 Muder Music</p>
+    </footer>
+    <script src="bundle.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

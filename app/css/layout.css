@@ -1,0 +1,161 @@
+.full-width{
+  width: 100%;
+}
+
+.songs-view{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-fix{
+  box-sizing: border-box;
+  padding: .2em;
+}
+
+.btn-fix{
+  text-align: center;
+  font-size: 1.1em;
+  outline: none;
+  padding: .2em;
+  border-radius: 1em;
+  border: none;
+}
+
+.flex-container{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: stretch;
+}
+
+.center-box{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-box{
+  width: 60%;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center;
+}
+
+.user-position{
+  box-sizing: border-box;
+  padding: 1em;
+  margin-top: 2em;
+  background: rgb(28, 29, 28);
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.top-fixed{
+  position: fixed;
+  left: 0; top: 0;
+}
+
+.left-text{
+  text-align: left;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.float-left{
+  float: left;
+  margin-left: 1.4em;
+}
+
+.upload-song-div{
+  float: right;
+}
+
+.vote-box{
+  border-right: 1px solid black;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  width: 7%;
+  margin-top: -15.2em;
+  float: left;
+  margin-left: 1.5em;
+  background: rgb(0, 170, 129);
+  height: 13em;
+  z-index: -1;
+}
+
+/*videos en la pagina pricipal*/
+.ng-binding{
+  float: right;
+  width: 90%;
+}
+
+.flex-center{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 3.5em;
+}
+
+.song-points{
+  font-size: 1.3em;
+  margin-top: 1em;
+}
+
+
+.header-nav li{
+  display: inline-block;
+}
+
+.settings-img{
+  margin-top: .5em;
+  width: 80%;
+  cursor: pointer;
+}
+
+.search-img{
+  margin-top: .5em;
+  width: 70%;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.main-search{
+  padding: .4em;
+  border: none;
+  width: 100%;
+  float: left;
+  margin-top: -3.1em;
+  margin-right: 10em;
+  margin-left: 1.5em;
+  outline: none;
+}
+
+.settings-box{
+  background: rgb(15, 15, 15);
+  position: fixed;
+  top: 5.5em;
+  right: 0;
+  border: 1px solid black;
+  width: 10%;
+  height: 10em;
+  overflow: hidden;
+}
+
+.settings-box h3{
+  color: antiquewhite;
+  position: absolute;
+  bottom: .5em;
+  right: .5em;
+}

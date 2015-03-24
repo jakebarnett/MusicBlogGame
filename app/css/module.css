@@ -1,0 +1,217 @@
+.main-content{
+  margin-top: 8em;
+  text-align: center;
+}
+
+.main-header{
+  width: 100%;
+  background-color: rgba(0, 170, 129, 1);
+  z-index: 2;
+}
+
+.app-logo{
+  float: left;
+  font-size: 3em;
+  color: white;
+  margin-top: .1em;
+}
+
+.main-nav-bar{
+  width: 100%;
+  height: auto;
+  background-color: rgb(28, 29, 28);
+  margin-top: 3.7em;
+  z-index: 2;
+}
+
+.nav-list{
+  width: 100%;
+  text-align: center;
+}
+
+.nav-list li{
+  color: white;
+  font-size: 1.5em;
+  display: inline;
+  transition: all .2s;
+  margin: 4.5em;
+}
+
+/*create user BODY*/
+.create-usr-img{
+  background: url(../img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: honeydew;
+  background-blend-mode: multiply;
+}
+
+.createUser-form{
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.create-user-wrapper{
+  color: rgba(0, 170, 129, 1);
+  margin-top: 10.5em;
+  box-shadow: 0 0 .8em rgba(0, 145, 112, 0.93);
+  width: 70%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.89);
+  z-index: -1;
+  -webkit-animation-duration: 8s;
+}
+
+/*enter song form*/
+.enter-song-form{
+  margin-top: 3em;
+  background: rgba(29, 25, 24, 1);
+}
+
+/*form*/
+.ng-valid,
+.ng-valid-email{
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  display: block;
+  padding: .8em;
+  width: 60%;
+  text-align: left;
+}
+
+.save-btn{
+  color: rgba(0, 170, 129, 1);
+  font-size: 1.2em;
+  padding: .8em;
+  border: none;
+  cursor: pointer;
+}
+
+.user-form{
+  background: rgba(0, 0, 0, 0.95);
+  box-shadow: 0 0 .5em;
+  position: fixed;
+  width: 20em;
+  height: 10em;
+  margin: auto;
+  left: 0; right: 0; top: 0; bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.edit-user-btn{
+  background-color: rgb(0, 164, 124);
+  box-shadow: 0 0 .5em;
+  width: 20%;
+  margin-left: 1.9em;
+}
+
+.user-container{
+  overflow: hidden;
+  margin-top: -4em;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 170, 129, 0.06);
+}
+
+.usr-in-usr{
+  margin-top: 1em;
+  margin-bottom: 5em;
+  width: 80%;
+}
+
+.usr-info{
+  text-align: left;
+  margin-bottom: 10em;
+  margin: 0;
+}
+
+/*add song*/
+[for="song-input"]{
+  font-size: 2em;
+}
+
+.inputUrl{
+  border: none;
+  outline: none;
+  width: 50%;
+  padding: .6em;
+}
+
+.add-song-btn{
+  padding: .6em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.type-button{
+  width: 20%;
+}
+
+.submit{
+  width: 40%;
+}
+
+.button{
+  background: antiquewhite;
+  padding: .5em;
+  border: none;
+  outline: none;
+  color: rgb(0, 163, 123);
+}
+
+/*songs*/
+.song-style-wrapper{
+  width: 80%;
+  margin-top: 4.1em;
+  margin-bottom: 5em;
+}
+
+[for="upload"]{
+  z-index: 3;
+  color: black;
+}
+
+.title-bg{
+  background-color: rgba(0, 170, 129, 0.12);
+  width: 98%;
+  margin-top: -5em;
+  overflow: hidden;
+  padding-bottom: 1.4em;
+}
+
+.white-text{
+  color: antiquewhite;
+}
+
+.icon-img{
+  width: 99%;
+  cursor: pointer;
+}
+
+/*dont turn on Desktop size*/
+.menu-show{
+  display: none;
+}
+
+.menu-icon{
+  color: rgb(28, 29, 28);
+  cursor: pointer;
+}
+
+/*logout box*//*logout box*//*logout box*//*logout box*/
+.settings-box{
+  display: none;
+}
