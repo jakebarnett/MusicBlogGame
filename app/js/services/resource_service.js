@@ -3,9 +3,11 @@ module.exports = function(app) {
     console.log(data);
   };
 
-  app.factory('resource', ['$http', function($http) {
+  app.factory('resource', ['$http', '$cookies',  function($http, $cookies) {
     return function(resourceName) {
+    $http.defaults.headers.common['eat'] = $cookies.eat;
       return {
+
         getAll: function(callback) {
           $http({
             method: 'GET',

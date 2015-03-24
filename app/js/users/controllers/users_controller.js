@@ -1,8 +1,25 @@
 module.exports = function(app) {
-  app.controller('usersController', ['$scope', 'resource', function($scope, resource) {
+  app.controller('usersController', ['$scope', 'resource', '$http', '$cookies', '$location',
+  function($scope, resource, $http, $cookies, $location) {
+
     $scope.users = [];
 
     var User = resource('user');
+
+    $scope.getUser = function(user) {
+      $http.defaults.headers.common['eat'] = $cookies.eat;
+      $http({
+        method: 'GET',
+        url: '/user/currentuser'
+      })
+      .error(function(data) {
+       console.log(data);
+      })
+      .success(function(data) {
+        $scope.user = data;
+      });
+    };
+
     $scope.getAllUsers = function() {
       User.getAll(function(data) {
         $scope.users = data;
@@ -10,10 +27,20 @@ module.exports = function(app) {
     };
 
     $scope.createUser = function(user) {
-      User.create(user, function(data) {
-        $scope.users.push(data);
-      });
+      $http({
+       method: 'POST',
+       url: '/user',
+       data: $scope.newUser
+     })
+     .error(function(data) {
+       console.log(data);
+     })
+     .success(function(data) {
+       $cookies.eat = data.eat;
+       $location.path('/');
+     });
     };
+
 
     $scope.save = function(user) {
       User.save(user, function() {

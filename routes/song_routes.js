@@ -3,16 +3,21 @@ var Song = require('../models/song_model');
 var bodyparser = require('body-parser');
 var express = require('express');
 var moment = require('moment');
+var eat_auth = require('../lib/eat_auth');
+var postingUsername = require('../lib/eat_auth').postingUsername
 
-module.exports = function(app) {
+module.exports = function(app, appSecret) {
 
   express.Router().use(bodyparser.json());
 
   //creates a song
-  app.post('/songs', function(req, res) {
+  app.post('/songs', eat_auth(appSecret), function(req, res) {
+    console.log('routerUser:' + req.user.username);
     var newSong = new Song(req.body);
+    newSong.postedBy = req.user.username;
     newSong.save(function(err, data) {
-      if (err) res.status(500).send({msg: 'could not save song'});
+      if (err) console.log(err); //res.status(500).send({msg: 'could not save song'});
+
       res.json(data);
     });
   });
@@ -28,7 +33,7 @@ module.exports = function(app) {
   });
 
   //gets all songs posted same day
-  app.get('/songs', function(req, res) {
+  app.get('/songs', eat_auth(appSecret), function(req, res) {
     var today = moment().format('MM DD YY');
     Song.find()
     .where('postedDate').equals(today)
