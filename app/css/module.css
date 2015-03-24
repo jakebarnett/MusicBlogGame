@@ -62,7 +62,7 @@
   box-shadow: 0 0 .8em rgba(0, 145, 112, 0.93);
   width: 70%;
   height: auto;
-  background: rgba(0, 0, 0, 0.89);
+  background: rgb(28, 29, 28);
   z-index: -1;
   -webkit-animation-duration: 8s;
 }
