@@ -2,8 +2,10 @@
 
 require('angular/angular');
 require('angular-route');
+require('angular-cookies');
+require('angular-base64');
 
-var musicApp = angular.module('musicApp', ['ngRoute']);
+var musicApp = angular.module('musicApp', ['ngRoute', 'base64', 'ngCookies']);
 
 //services
 require('./services/resource_service')(musicApp);
@@ -32,6 +34,10 @@ musicApp.config(['$routeProvider', function($routeProvider) {
   })
   .when('/', {
     redirectTo: '/songs'
+  })
+  .when('/profile', {
+    templateUrl: 'templates/users/profile_template.html',
+    controller: 'usersController'
   })
   .otherwise({
     templateUrl: 'templates/four_oh_four.html'
