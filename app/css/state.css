@@ -1,0 +1,33 @@
+input:focus{
+  box-shadow: 0 0 .1em white;
+  border: 1px solid rgba(0, 170, 129, 1);
+}
+
+.inputUrl:focus{
+  box-shadow: 0 0 .1 white;
+}
+
+.edit-user-btn:hover{
+  cursor: pointer;
+}
+
+.edit-user-btn:active{
+  box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
+}
+
+.icon-img:active{
+  width: 95%;
+}
+
+.nav-list li:hover{
+  background: black;
+  color: rgba(0, 170, 129, 1);
+  cursor: pointer;
+  padding: .1em;
+}
+
+.add-song-btn:active{
+  padding: .58em;
+  box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
+}
+
