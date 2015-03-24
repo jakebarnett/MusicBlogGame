@@ -39,10 +39,10 @@
 
 /*create user BODY*/
 .create-usr-img{
-/*  background: url(../img/party.jpg);*/
+  background: url(../img/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: cesnter;
+  background-position: center;
   background-attachment: fixed;
   background-color: honeydew;
   background-blend-mode: multiply;
@@ -118,7 +118,7 @@
   margin-top: -4em;
   width: 100%;
   height: auto;
-  background-color: rgba(0, 170, 129, 0.96);
+  background-color: rgba(0, 170, 129, 0.06);
 }
 
 .usr-in-usr{
