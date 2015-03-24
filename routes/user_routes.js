@@ -29,7 +29,8 @@ module.exports = function(app, passport, appSecret) {
     newUser.basic.email = req.body.email;
     newUser.basic.password = newUser.generateHash(req.body.password);
     newUser.username = req.body.username;
-    newUser.avatar = req.body.avatar
+    newUser.avatar = req.body.avatar;
+    newUser.bio = req.body.bio;
     newUser.save(function(err, user) {
       if (err)  res.status(500).send({msg: 'could not save user'}) //console.log(err);
 

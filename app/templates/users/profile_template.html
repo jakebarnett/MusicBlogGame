@@ -1,11 +1,21 @@
 <main data-ng-controller="usersController" data-ng-init="getUser()">
   <h1>
-    This is the user profile view.
+    {{user.username}}'s profile
   </h1>
-    <ul>
-      <li>{{user.username}}</li>
-      <li>{{user.avatar}}</li>
-      <li>{{user.bio}}</li>
-      <li>{{user.songs}}<li>
-    <ul>
+  <ul>
+    <li> Email: {{user.basic.email}}</li>
+    <li> Bio: {{user.bio}}</li>
+  </ul>
+  {{user.avatar}} <br>
+
+  <form data-ng-if="user.editing">
+    <label for="user{{user._id}}">Edit User</label> <br>
+    <input type="text" id="user{{user._id}}" data-ng-model="user.avatar"> <br>
+    <input type="text" id="user{{user.bio}}" data-ng-model="user.bio"> <br>
+    <button type="submit" data-ng-click="save(user)">Save Changes</button>
+    <button type="button" data-ng-click="editToggle(user)">Cancel</button>
+  </form>
+
+  <button data-ng-click="editToggle(user)" data-ng-if = "!user.editing">Edit User</button>
+
 </main>
