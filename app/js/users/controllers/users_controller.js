@@ -1,8 +1,13 @@
 module.exports = function(app) {
-  app.controller('usersController', ['$scope', 'resource', '$http', '$cookies', '$location',
-  function($scope, resource, $http, $cookies, $location) {
+  app.controller('usersController', ['$scope', 'resource', '$http', '$cookies', '$location', '$sce' ,
+  function($scope, resource, $http, $cookies, $location, $sce) {
 
     $scope.users = [];
+
+    $scope.deliberatelyTrustDangerousSnippet = function(html) {
+      return $sce.trustAsHtml(html);
+    };
+
 
     var User = resource('user');
 
