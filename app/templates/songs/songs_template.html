@@ -1,3 +1,8 @@
+<section data-ng-controller="usersController" data-ng-init="getUser()">
+  <div>{{user.remainingVotes}}</div>
+<section>
+
+
 <section data-ng-controller="songsController" data-ng-init="getAllSongs()">
   <section data-add-new-song-directive></section>
   <ul data-ng-repeat="song in songs" class="song-style-wrapper center-box">
@@ -5,9 +10,4 @@
     <li>{{song.postedBy}}</li>
     <li data-vote-on-song-directive></li>
   </ul>
-<!--   <div class="greetingsBox animated zoomOutUp">
-    <img src="img/upload.png" alt="upload image">
-    <h1>Welcome to MuderMusic. Upload your first song.</h1>
-  </div> -->
 </section>
-

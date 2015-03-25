@@ -48,10 +48,11 @@
 }
 
 .user-position{
+  height: 16em;
   box-sizing: border-box;
   padding: 1em;
   margin-top: 2em;
-  background: rgb(28, 29, 28);
+  background: rgba(28, 29, 28, 1);
   width: 100%;
   display:flex;
   flex-direction: column;
@@ -80,13 +81,10 @@
 }
 
 .vote-box{
-  border-right: 1px solid black;
-  border-top-left-radius: 1em;
-  border-bottom-left-radius: 1em;
+  border: 1px solid black;
   width: 7%;
-  margin-top: -16.2em;
+  margin-top: -20.3em;
   float: left;
-  margin-left: 1.5em;
   background: rgb(0, 170, 129);
   height: 13em;
   z-index: -1;
@@ -95,7 +93,8 @@
 /*videos en la pagina pricipal*/
 .ng-binding{
   float: right;
-  width: 90%;
+  width: 100%;
+  margin-bottom: 2em;
 }
 
 .flex-center{
@@ -173,3 +172,35 @@
 .greetingsBox h1{
   font-size: 2em;
 }
+
+.users-btn{
+  box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
+  padding: .4em;
+  color: antiquewhite;
+  background: rgb(28, 29, 28);
+  border: none;
+  cursor: pointer;
+  margin: .1em;
+}
+
+.pull-up{
+  margin-top: -2em;
+}
+
+.show-hidden-box{
+  position: fixed;
+  top: 4.5em;
+  right: 1em;
+  z-index: 100
+}
+
+.log-in-box{
+  display: inline-block;
+}
+
+.profile-info-box{
+  width: 90%;
+  background: black;
+  height: 20vh;
+}
+
