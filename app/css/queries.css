@@ -13,6 +13,7 @@
   .vote-box{
     width: 10%;
     margin-left: 0em;
+    border-bottom-right-radius: 8em;
   }
 
   .user-container{
@@ -110,7 +111,7 @@
 
   .edit-usr-form{
     margin-top: -3.5em;
-    width: 60%;
+    width: 70%;
   }
 
 }
@@ -123,8 +124,8 @@
 
   .vote-box{
     border: 1px solid black;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-right-radius-radius: 0;
     width: 6%;
     margin-top: -20.2em;
     float: right;
@@ -206,9 +207,6 @@
     margin-top: 2em;
   }
 /*song box-iframe*/
-  .user-form{
-    margin-top: 12.5em;
-  }
 
   .create-user-wrapper{
     margin-top: 7.5em;
@@ -227,16 +225,6 @@
     width: 20%;
   }
 
-/*dont turn on mobile size*/
-  .main-search{
-   display: none;
-  }
-
-/*dont turn on mobile isze*/
-  .search-img{
-    display: none;
-  }
-
   .menu-show{
     display: block;
     font-size: 2em;
@@ -249,13 +237,39 @@
   .show-hidden-box{
     width: 30%;
     position: fixed;
-    top: 6.5em;
+    top: 5.3em;
     right: .1em;
     z-index: 100
   }
 
-  .edit-usr-form{
-    margin-top: 1em;
-    width: 80%;
+  .profile-info-box{
+    width: 100%;
+    margin-top: 5em;
   }
+
+  .profile-info-box section{
+    width: 100%;
+    height: 15vh;
+    position: absolute;
+    top: 9em;
+    margin: auto;
+  }
+
+  .profile-info-box div{
+    right: .5em;
+    color: white;
+  }
+
+  .profile-pic{
+    left: 1em;
+    border-radius: 0;
+    box-shadow: 0 0 .1em rgba(0, 170, 129, 1);
+    width: 25%;
+  }
+
+  .edit-usr-form{
+    margin-top: 0em;
+    width: 70%;
+  }
+
 }
