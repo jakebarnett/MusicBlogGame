@@ -85,7 +85,6 @@ label,
 [type="submit"]{
   color: rgb(28, 29, 28);
   padding: .3em;
-  font-weight: 300;
   margin-top: .7em;
   margin-bottom: .7em;
 }
@@ -106,14 +105,4 @@ label{
 
 fieldset{
   text-align: center;
-}
-
-aside{
-  position: fixed;
-  right: 0;
-  width: 15%;
-  border: 1px solid rgba(0, 170, 129, 1);
-  top: 4em;
-  height: 100vh;
-  border-right: none;
 }
