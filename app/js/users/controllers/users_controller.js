@@ -1,6 +1,6 @@
 module.exports = function(app) {
-  app.controller('usersController', ['$scope', 'resource', '$http', '$cookies', '$location',
-  function($scope, resource, $http, $cookies, $location) {
+  app.controller('usersController', ['$scope', 'resource', '$http', '$cookies', '$location', '$base64',
+  function($scope, resource, $http, $cookies, $location, $base64) {
 
     $scope.users = [];
 
@@ -39,6 +39,20 @@ module.exports = function(app) {
        $cookies.eat = data.eat;
        $location.path('/');
      });
+    };
+
+    $scope.signIn = function(existingUser) {
+      console.log($scope.existingUser.basic.email);
+      console.log($scope.existingUser.basic.password);
+      $http.defaults.headers.common['Authorization'] = 'Basic: ' + $base64.encode($scope.existingUser.basic.email + ':' + $scope.existingUser.basic.password);
+      $http.get('/sign_in')
+      .error(function(data) {
+        console.log(data);
+      })
+      .success(function(data) {
+        $cookies.eat = data.eat; 
+        $location.path('/');
+      });
     };
 
     $scope.save = function(user) {
