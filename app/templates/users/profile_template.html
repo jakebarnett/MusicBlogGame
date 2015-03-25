@@ -1,12 +1,13 @@
 <main data-ng-controller="usersController" data-ng-init="getUser()" class="full-width">
   <section class="profile-info-box center-box">
-    <section class="push-down">
+    <div class="push-down">Number of votes</div>
+    <section>
       <h1>
-        {{user.username}}'s profile
+        {{user.username}}'s Profile
       </h1>
       <ul>
-        <li> Email: {{user.basic.email}}</li>
-        <li> Bio: {{user.bio}}</li>
+        <li class="fix-ng-binding"> Email: {{user.basic.email}}</li>
+        <li class="fix-ng-binding"> Bio: {{user.bio}}</li>
       </ul>
     </section>
     <img class="profile-pic" src="{{user.avatar}}">

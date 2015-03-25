@@ -228,11 +228,8 @@
   width: 40%;
 }
 
-.push-down{
-  padding-top: 2.2em;
-}
-
 .edit-usr-form{
+  box-shadow: 0 0 1em white;
   overflow: hidden;
 }
 

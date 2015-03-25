@@ -203,17 +203,44 @@
 .profile-info-box{
   width: 90%;
   background: rgb(28, 29, 28);
-  height: 12em;
   color: white;
-  position: relative;
+  overflow: hidden;
+  padding-top: 2em;
   margin-top: -5em;
+  position: relative;
+  height: 12em;
+}
+
+.profile-info-box section{
+  border-left: 1px solid rgba(0, 170, 129, 1);
+  border-right: 1px solid rgba(0, 170, 129, 1);
+  width: 50%;
+  height: 15vh;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+}
+
+.profile-info-box div{
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  width: 20%;
+  margin: auto;
+  height: 10vh;
+  color: black;
 }
 
 .profile-pic{
+  position: absolute;
+  left: 1.5em; top: 0; bottom: 0;
+  margin: auto;
   border-radius: 0;
   box-shadow: 0 0 .4em rgba(0, 170, 129, 1);
-  position: absolute;
-  top: 2em;
-  left: 2em;
+  width: 20%;
   z-index: 100;
+}
+
+
+.fix-ng-binding{
+  margin-top: -1.2em;
 }

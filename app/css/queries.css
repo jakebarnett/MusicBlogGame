@@ -114,24 +114,6 @@
     width: 60%;
   }
 
-  .profile-info-box{
-    width: 90%;
-    background: rgb(28, 29, 28);
-    height: 12em;
-    color: white;
-    position: relative;
-    margin-top: -8em;
-  }
-
-  .profile-pic{
-    border-radius: 0;
-    position: absolute;
-    top: 4em;
-    left: .2em;
-    z-index: 100;
-    width: 25%;
-  }
-
 }
 /*MOBILE*/
 @media (max-width: 600px){
@@ -276,24 +258,5 @@
   .edit-usr-form{
     margin-top: 1em;
     width: 80%;
-  }
-
-  .profile-info-box{
-    height: 10em;
-    width: 100%;
-    margin-top: 5em;
-  }
-
-  .profile-pic{
-    top: 4em;
-    left: .2em;
-    width: 25%;
-  }
-
-  .push-down{
-    padding-top: 3em;
-    margin-right: .1em;
-    margin-left: 6em;
-    text-align: right;
   }
 }
