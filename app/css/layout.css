@@ -84,7 +84,7 @@
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
   width: 7%;
-  margin-top: -15.2em;
+  margin-top: -16.2em;
   float: left;
   margin-left: 1.5em;
   background: rgb(0, 170, 129);
@@ -158,4 +158,18 @@
   position: absolute;
   bottom: .5em;
   right: .5em;
+}
+
+.greetingsBox{
+  width: 60vw;
+  height: 10vh;
+  position: absolute;
+  margin: auto;
+  top: 12em;
+  left: 0; right: 0;
+  -webkit-animation-delay: 3s;
+}
+
+.greetingsBox h1{
+  font-size: 2em;
 }
