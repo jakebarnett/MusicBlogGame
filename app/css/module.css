@@ -227,3 +227,11 @@
   background: rgb(28, 29, 28);
   width: 40%;
 }
+
+.push-down{
+  padding-top: 2.2em;
+}
+
+.edit-usr-form{
+  overflow: hidden;
+}

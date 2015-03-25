@@ -81,6 +81,7 @@
 }
 
 .vote-box{
+  border-bottom-right-radius: 2em;
   border: 1px solid black;
   width: 7%;
   margin-top: -20.3em;
@@ -88,6 +89,7 @@
   background: rgb(0, 170, 129);
   height: 13em;
   z-index: -1;
+  margin-left: -2em;
 }
 
 /*videos en la pagina pricipal*/
@@ -200,7 +202,17 @@
 
 .profile-info-box{
   width: 90%;
-  background: black;
-  height: 20vh;
+  background: rgb(28, 29, 28);
+  height: 12em;
+  color: white;
+  position: relative;
+  margin-top: -5em;
 }
 
+.profile-pic{
+  border-radius: 0;
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  z-index: 100;
+}
