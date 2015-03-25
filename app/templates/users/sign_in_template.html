@@ -1,0 +1,14 @@
+<section data-ng-controller="usersController">
+  <h1>Sign In</h1>
+  <form class="signIn-form" name="signInForm">
+    <fieldset>
+      <legend>Sign In</legend>
+      <label for="existingUserUsername">Email</label>
+      <input type="text" id="existingUserEmail" data-ng-model="existingUser.basic.email"
+             placeholder="name@email.com">
+      <label for="existingUserPassword">Password</label>
+      <input type="password" id="existingUserPassword" data-ng-model="existingUser.basic.password">
+      <button type="submit" class="login-btn" data-ng-click="signIn(existingUser)">Sign In</button>
+    </fieldset>
+  </form>
+</section>

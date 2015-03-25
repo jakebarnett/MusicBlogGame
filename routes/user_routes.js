@@ -42,6 +42,14 @@ module.exports = function(app, passport, appSecret) {
     });
   });
 
+  //sign in as existing user
+  app.get('/sign_in', passport.authenticate('basic', {session: false}), function(req, res) {
+    req.user.generateToken(appSecret, function(err, token) {
+      if (err) return res.status(500).send({msg: 'could not generate token'});
+      res.json({eat: token});
+    })
+  });
+
   //updates an existing user
   app.put('/user/:id', function(req, res) {
     var updatedUser =  req.body;
@@ -51,4 +59,5 @@ module.exports = function(app, passport, appSecret) {
       res.json(req.body);
     });
   });
+  
 };
