@@ -48,10 +48,11 @@
 }
 
 .user-position{
+  height: 16em;
   box-sizing: border-box;
   padding: 1em;
   margin-top: 2em;
-  background: rgb(28, 29, 28);
+  background: rgba(28, 29, 28, 1);
   width: 100%;
   display:flex;
   flex-direction: column;
@@ -172,10 +173,6 @@
   font-size: 2em;
 }
 
-.show-posted-songs-btn{
-  margin-top: -2em;
-}
-
 .users-btn{
   box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
   padding: .4em;
@@ -186,6 +183,24 @@
   margin: .1em;
 }
 
-.span-box{
+.pull-up{
   margin-top: -2em;
 }
+
+.show-hidden-box{
+  position: fixed;
+  top: 4.5em;
+  right: 1em;
+  z-index: 100
+}
+
+.log-in-box{
+  display: inline-block;
+}
+
+.profile-info-box{
+  width: 90%;
+  background: black;
+  height: 20vh;
+}
+

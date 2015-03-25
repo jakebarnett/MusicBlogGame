@@ -19,12 +19,10 @@ input:focus{
   width: 95%;
 }
 
-/*.nav-list li:hover{
-  background: black;
+.nav-list li:hover{
   color: rgba(0, 170, 129, 1);
   cursor: pointer;
-  padding: .1em;
-}*/
+}
 
 .add-song-btn:active{
   padding: .58em;

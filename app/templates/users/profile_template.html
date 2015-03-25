@@ -1,4 +1,8 @@
-<main data-ng-controller="usersController" data-ng-init="getUser()">
+<main data-ng-controller="usersController" data-ng-init="getUser()" class="full-width">
+
+  <section class="profile-info-box center-box">
+
+  </section>
   <h1>
     {{user.username}}'s profile
   </h1>
@@ -6,14 +10,13 @@
     <li> Email: {{user.basic.email}}</li>
     <li> Bio: {{user.bio}}</li>
   </ul>
-  {{user.avatar}} <br>
-  <form data-ng-if="user.editing">
-    <label for="user{{user._id}}">Edit User</label> <br>
-    <input type="text" id="user{{user._id}}" data-ng-model="user.avatar"> <br>
-    <input type="text" id="user{{user.bio}}" data-ng-model="user.bio"> <br>
-    <button type="submit" data-ng-click="save(user)">Save Changes</button>
-    <button type="button" data-ng-click="editToggle(user)">Cancel</button>
+    <img src="{{user.avatar}}">
+  <form class="edit-usr-form animated zoomIn edit-user-box" data-ng-if="user.editing">
+    <label for="user{{user._id}}">Update Profile</label>
+    <input type="text" id="user{{user._id}}" data-ng-model="user.avatar">
+    <input type="text" id="user{{user.bio}}" data-ng-model="user.bio">
+    <button class="users-btn" type="submit" data-ng-click="save(user)">Save Changes</button>
+    <button class="users-btn" type="button" data-ng-click="editToggle(user)">Cancel</button>
   </form>
-  <button data-ng-click="editToggle(user)" data-ng-if = "!user.editing">Edit User</button>
-
+  <button class="users-btn show-hidden-box" data-ng-click="editToggle(user)" data-ng-if = "!user.editing">Update Profile</button>
 </main>

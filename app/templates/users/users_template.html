@@ -17,7 +17,7 @@
           <button class="center type-button button" type="button" data-ng-click="editToggle(user)">Cancel</button>
         </form>
       </li>
-      <li class="show-posted-songs-btn" data-ng-init=getSongs(user)>
+      <li class="show-posted-songs-btn pull-up" data-ng-init=getSongs(user)>
         <button class="users-btn" data-ng-click="songs.show = true">Show Posted Songs</button>
         <button class="users-btn" data-ng-if="songs.show" data-ng-click="songs.show = false">Hide Posted Songs</button>
         <section data-ng-if='songs.show'>

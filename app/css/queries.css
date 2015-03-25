@@ -100,6 +100,19 @@
   .user-position{
     height: 15em;
   }
+
+  .show-hidden-box{
+    position: fixed;
+    top: .9em;
+    right: 3em;
+    z-index: 100
+  }
+
+  .edit-usr-form{
+    margin-top: -3.5em;
+    width: 60%;
+  }
+
 }
 /*MOBILE*/
 @media (max-width: 600px){
@@ -231,5 +244,18 @@
 /*on click show mobile*/
   .settings-box{
     display: none;
+  }
+
+  .show-hidden-box{
+    width: 30%;
+    position: fixed;
+    top: 6.5em;
+    right: .1em;
+    z-index: 100
+  }
+
+  .edit-usr-form{
+    margin-top: 1em;
+    width: 80%;
   }
 }

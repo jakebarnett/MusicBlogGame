@@ -83,8 +83,8 @@ iframe{
 input,
 label,
 [type="submit"]{
+  color: rgb(28, 29, 28);
   padding: .3em;
-  color: rgba(0, 170, 129, 0.83);
   font-weight: 300;
   margin-top: .7em;
   margin-bottom: .7em;
