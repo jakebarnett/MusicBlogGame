@@ -30,7 +30,20 @@ module.exports = function(app, appSecret) {
     .select('songUrl')
     .exec(function(err, data) {
       if (err) console.log(err);
-      res.json(data);
+
+      var totalpoints = 0;
+
+      var getTotal = function (arrayofobjects) {
+        for(var i = 0; i < arrayofobjects.length; i++) {
+        totalpoints += arrayofobjects[i].points;
+        }
+      }
+
+      getTotal(data);
+
+      console.log(totalpoints);
+      
+      res.json({songs: data, points: totalpoints});
     });
   });
 
