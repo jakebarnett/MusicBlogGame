@@ -111,7 +111,7 @@
 
   .edit-usr-form{
     margin-top: -3.5em;
-    width: 60%;
+    width: 70%;
   }
 
 }
@@ -207,9 +207,6 @@
     margin-top: 2em;
   }
 /*song box-iframe*/
-  .user-form{
-    margin-top: 12.5em;
-  }
 
   .create-user-wrapper{
     margin-top: 7.5em;
@@ -226,16 +223,6 @@
 
   .heart-icon{
     width: 20%;
-  }
-
-/*dont turn on mobile size*/
-  .main-search{
-   display: none;
-  }
-
-/*dont turn on mobile isze*/
-  .search-img{
-    display: none;
   }
 
   .menu-show{
@@ -255,8 +242,34 @@
     z-index: 100
   }
 
-  .edit-usr-form{
-    margin-top: 1em;
-    width: 80%;
+  .profile-info-box{
+    width: 100%;
+    margin-top: 5em;
   }
+
+  .profile-info-box section{
+    width: 100%;
+    height: 15vh;
+    position: absolute;
+    top: 9em;
+    margin: auto;
+  }
+
+  .profile-info-box div{
+    right: .5em;
+    color: white;
+  }
+
+  .profile-pic{
+    left: 1em;
+    border-radius: 0;
+    box-shadow: 0 0 .1em rgba(0, 170, 129, 1);
+    width: 25%;
+  }
+
+  .edit-usr-form{
+    margin-top: 0em;
+    width: 70%;
+  }
+
 }

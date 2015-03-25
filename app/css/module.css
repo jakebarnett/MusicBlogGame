@@ -229,7 +229,7 @@
 }
 
 .edit-usr-form{
-  box-shadow: 0 0 1em white;
+  box-shadow: 0 0 .3em antiquewhite;
   overflow: hidden;
 }
 
