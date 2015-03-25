@@ -8,6 +8,7 @@ module.exports = function(app) {
     };
 
     var Song = resource('songs');
+    var User = resource('songs');
 
     $scope.upVote = function(song) {
       song.points = song.points + 1;
@@ -29,6 +30,12 @@ module.exports = function(app) {
       });
     };
 
+    $scope.changeVotes = function(user) {
+      user.remainingVotes = user.remainingVotes - 1;
+      User.save(user, function() {
+        console.log('-1 vote')
+      });
+    }
 
     $scope.addNew = function(song) {
       Song.create(song, function(data) {

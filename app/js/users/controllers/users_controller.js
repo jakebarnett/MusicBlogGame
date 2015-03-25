@@ -74,9 +74,10 @@ module.exports = function(app) {
       .error(function(data) {
         console.log(data);
       })
-      .success(function(songs) {
-        console.log(songs);
-        user.songs = songs;
+      .success(function(data) {
+        console.log(data);
+        user.songs = data.songs;
+        user.points = data.points;
       });
     };
 

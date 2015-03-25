@@ -11,6 +11,7 @@ var userSchema = new Schema ({
   username: 'String',
   avatar: 'String',
   bio: 'String',
+  remainingVotes: {type: Number, default: 5}
   //songs: [{type: Schema.Types.ObjectId, ref:'Song'}]
 });
 
