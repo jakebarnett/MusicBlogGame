@@ -7,7 +7,7 @@
   <section data-add-new-song-directive></section>
   <ul data-ng-repeat="song in songs" class="song-style-wrapper center-box">
     <li ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)">{{song.songUrl}}</li>
-    <li>{{song.postedBy}}</li>
+    <li>{{song.postedBy.username}}</li>
     <li data-vote-on-song-directive></li>
   </ul>
 </section>
