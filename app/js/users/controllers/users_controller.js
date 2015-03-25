@@ -49,8 +49,6 @@ module.exports = function(app) {
     };
 
     $scope.signIn = function(existingUser) {
-      console.log($scope.existingUser.basic.email);
-      console.log($scope.existingUser.basic.password);
       $http.defaults.headers.common['Authorization'] = 'Basic: ' + $base64.encode($scope.existingUser.basic.email + ':' + $scope.existingUser.basic.password);
       $http.get('/sign_in')
       .error(function(data) {
