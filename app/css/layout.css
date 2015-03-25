@@ -80,13 +80,10 @@
 }
 
 .vote-box{
-  border-right: 1px solid black;
-  border-top-left-radius: 1em;
-  border-bottom-left-radius: 1em;
+  border: 1px solid black;
   width: 7%;
-  margin-top: -16.2em;
+  margin-top: -20.3em;
   float: left;
-  margin-left: 1.5em;
   background: rgb(0, 170, 129);
   height: 13em;
   z-index: -1;
@@ -95,7 +92,8 @@
 /*videos en la pagina pricipal*/
 .ng-binding{
   float: right;
-  width: 90%;
+  width: 100%;
+  margin-bottom: 2em;
 }
 
 .flex-center{
@@ -172,4 +170,22 @@
 
 .greetingsBox h1{
   font-size: 2em;
+}
+
+.show-posted-songs-btn{
+  margin-top: -2em;
+}
+
+.users-btn{
+  box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
+  padding: .4em;
+  color: antiquewhite;
+  background: rgb(28, 29, 28);
+  border: none;
+  cursor: pointer;
+  margin: .1em;
+}
+
+.span-box{
+  margin-top: -2em;
 }

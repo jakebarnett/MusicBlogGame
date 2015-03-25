@@ -95,6 +95,10 @@
   .settings-box{
     display: none;
   }
+
+  .user-position{
+    height: 15em;
+  }
 }
 /*MOBILE*/
 @media (max-width: 600px){
@@ -108,7 +112,7 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     width: 6%;
-    margin-top: -16.2em;
+    margin-top: -20.2em;
     float: right;
     transition: all .2s;
     width: 20%;
@@ -161,7 +165,7 @@
 
   .user-position{
     margin-top: 4em;
-    height: 10em;
+    height: 17em;
     width: 100vw;
   }
 

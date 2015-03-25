@@ -134,6 +134,10 @@
   margin: 0;
 }
 
+.usr-info li{
+  margin-bottom: .1em;
+}
+
 /*add song*/
 [for="song-input"]{
   font-size: 2em;
