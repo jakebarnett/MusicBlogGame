@@ -211,6 +211,7 @@
 
 .profile-pic{
   border-radius: 0;
+  box-shadow: 0 0 .4em rgba(0, 170, 129, 1);
   position: absolute;
   top: 2em;
   left: 2em;

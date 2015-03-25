@@ -150,7 +150,7 @@
   padding: .6em;
 }
 
-.add-song-btn{
+.style-btn{
   padding: .6em;
   border: none;
   outline: none;
@@ -234,4 +234,14 @@
 
 .edit-usr-form{
   overflow: hidden;
+}
+
+.signIn-form{
+  width: 60%;
+  margin-top: 17em;
+  background: rgb(28, 29, 28);
+}
+
+.signIn-form input{
+  width: 50%;
 }
