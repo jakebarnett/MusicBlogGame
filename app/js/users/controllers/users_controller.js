@@ -1,8 +1,15 @@
 module.exports = function(app) {
-  app.controller('usersController', ['$scope', 'resource', '$http', '$cookies', '$location', '$base64',
-  function($scope, resource, $http, $cookies, $location, $base64) {
+
+  app.controller('usersController', ['$scope', 'resource', '$http', '$cookies', '$location', '$base64', '$sce',
+  function($scope, resource, $http, $cookies, $location, $base64, $sce) {
+
 
     $scope.users = [];
+
+    $scope.deliberatelyTrustDangerousSnippet = function(html) {
+      return $sce.trustAsHtml(html);
+    };
+
 
     var User = resource('user');
 
@@ -50,7 +57,7 @@ module.exports = function(app) {
         console.log(data);
       })
       .success(function(data) {
-        $cookies.eat = data.eat; 
+        $cookies.eat = data.eat;
         $location.path('/');
       });
     };
