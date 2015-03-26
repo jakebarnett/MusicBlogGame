@@ -9,14 +9,7 @@
           <li>{{user.bio}}</li>
         </ul>
       </section>
-      <li>
-        <form data-ng-if="user.editing" class="user-form animated zoomIn text-center">
-          <label for="user{{user._id}}">Edit User</label>
-          <input class="center" type="text" id="user{{user._id}}" data-ng-model="user.avatar">
-          <button class="center type-submit button" type="submit" data-ng-click="save(user)">Save Changes</button>
-          <button class="center type-button button" type="button" data-ng-click="editToggle(user)">Cancel</button>
-        </form>
-      </li>
+
 
       <li class="show-posted-songs-btn pull-up" data-ng-init='getSongs(user)'>
         <h3> total user points: {{user.points}} </h3>
