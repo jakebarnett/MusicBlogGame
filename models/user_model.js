@@ -11,7 +11,8 @@ var userSchema = new Schema ({
   username: 'String',
   avatar: 'String',
   bio: 'String',
-  remainingVotes: {type: Number, default: 5}
+  remainingVotes: {type: Number, default: 5},
+  hasSubmitted: {type: Boolean, default: false}
   //songs: [{type: Schema.Types.ObjectId, ref:'Song'}]
 });
 
