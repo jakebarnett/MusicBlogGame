@@ -1,17 +1,33 @@
+.top-fixed{
+  position: fixed;
+  left: 0; top: 0;}
+
+.left-text{
+  text-align: left;}
+
+.center-text{
+  text-align: center;}
+
+.float-left{
+  float: left;
+  margin-left: 1.4em;}
+
 .full-width{
-  width: 100%;
-}
+  width: 100%;}
+
+.center-box{
+  margin-left: auto;
+  margin-right: auto;}
+
+.text-center{
+  text-align: center;}
 
 .songs-view{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
+  width: 80%;}
 
 .box-fix{
   box-sizing: border-box;
-  padding: .2em;
-}
+  padding: .2em;}
 
 .btn-fix{
   text-align: center;
@@ -19,8 +35,7 @@
   outline: none;
   padding: .2em;
   border-radius: 1em;
-  border: none;
-}
+  border: none;}
 
 .flex-container{
   width: 100%;
@@ -29,13 +44,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-content: space-around;
-  align-items: stretch;
-}
-
-.center-box{
-  margin-left: auto;
-  margin-right: auto;
-}
+  align-items: stretch;}
 
 .flex-box{
   width: 60%;
@@ -44,8 +53,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-content: space-around;
-  align-items: center;
-}
+  align-items: center;}
 
 .user-position{
   height: 16em;
@@ -55,30 +63,10 @@
   background: rgba(28, 29, 28, 1);
   width: 100%;
   display:flex;
-  flex-direction: column;
-}
-
-.top-fixed{
-  position: fixed;
-  left: 0; top: 0;
-}
-
-.left-text{
-  text-align: left;
-}
-
-.center-text{
-  text-align: center;
-}
-
-.float-left{
-  float: left;
-  margin-left: 1.4em;
-}
+  flex-direction: column;}
 
 .upload-song-div{
-  float: right;
-}
+  float: right;}
 
 .vote-box{
   border-bottom-right-radius: 2em;
@@ -89,15 +77,13 @@
   background: rgb(0, 170, 129);
   height: 13em;
   z-index: -1;
-  margin-left: -2em;
-}
+  margin-left: -2em;}
 
 /*videos en la pagina pricipal*/
 .ng-binding{
   float: right;
   width: 100%;
-  margin-bottom: 2em;
-}
+  margin-bottom: 2em;}
 
 .flex-center{
   width: 100%;
@@ -106,74 +92,26 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin-top: 3.5em;
-}
+  margin-top: 3.5em;}
 
 .song-points{
   font-size: 1.3em;
-  margin-top: 1em;
-}
+  margin-top: 1em;}
 
 
 .header-nav li{
-  display: inline-block;
-}
+  display: inline-block;}
 
 .settings-img{
   margin-top: .5em;
   width: 80%;
-  cursor: pointer;
-}
+  cursor: pointer;}
 
 .search-img{
   margin-top: .5em;
   width: 70%;
   cursor: pointer;
-  z-index: 50;
-}
-
-.main-search{
-  padding: .4em;
-  border: none;
-  width: 100%;
-  float: left;
-  margin-top: -3.1em;
-  margin-right: 10em;
-  margin-left: 1.5em;
-  outline: none;
-}
-
-.settings-box{
-  background: rgb(15, 15, 15);
-  position: fixed;
-  top: 5.5em;
-  right: 0;
-  border: 1px solid black;
-  width: 10%;
-  height: 10em;
-  overflow: hidden;
-}
-
-.settings-box h3{
-  color: antiquewhite;
-  position: absolute;
-  bottom: .5em;
-  right: .5em;
-}
-
-.greetingsBox{
-  width: 60vw;
-  height: 10vh;
-  position: absolute;
-  margin: auto;
-  top: 12em;
-  left: 0; right: 0;
-  -webkit-animation-delay: 3s;
-}
-
-.greetingsBox h1{
-  font-size: 2em;
-}
+  z-index: 50;}
 
 .users-btn{
   box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
@@ -182,23 +120,19 @@
   background: rgb(28, 29, 28);
   border: none;
   cursor: pointer;
-  margin: .1em;
-}
+  margin: .1em;}
 
 .pull-up{
-  margin-top: -2em;
-}
+  margin-top: -2em;}
 
 .show-hidden-box{
   position: fixed;
   top: 4.5em;
   right: 1em;
-  z-index: 100
-}
+  z-index: 100}
 
 .log-in-box{
-  display: inline-block;
-}
+  display: inline-block;}
 
 .profile-info-box{
   width: 90%;
@@ -208,26 +142,23 @@
   padding-top: 2em;
   margin-top: -5em;
   position: relative;
-  height: 12em;
-}
+  height: 12em;}
 
 .profile-info-box section{
-  border-left: 1px solid rgba(0, 170, 129, 1);
-  border-right: 1px solid rgba(0, 170, 129, 1);
+  border-left: 1px solid rgba(39, 40, 39, 1);
+  border-right: 1px solid rgba(39, 40, 39, 1);
   width: 50%;
   height: 15vh;
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  margin: auto;
-}
+  margin: auto;}
 
 .profile-info-box div{
   position: absolute;
   right: 0; top: 0; bottom: 0;
   width: 20%;
   margin: auto;
-  height: 10vh;
-}
+  height: 10vh;}
 
 .profile-pic{
   position: absolute;
@@ -236,10 +167,8 @@
   border-radius: 0;
   box-shadow: 0 0 .4em rgba(0, 170, 129, 1);
   width: 20%;
-  z-index: 100;
-}
+  z-index: 100;}
 
 
 .fix-ng-binding{
-  margin-top: -1.2em;
-}
+  margin-top: -1.2em;}

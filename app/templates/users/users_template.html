@@ -1,14 +1,14 @@
 <main class="main-content center-box" data-ng-controller="usersController" data-ng-init='getAllUsers()'>
-  <section class="user-container ">
+  <div class="user-container ">
     <ul data-ng-repeat="user in users" class="center-box usr-in-usr">
-      <section class="user-position">
+      <li class="user-position">
         <img src={{user.avatar}}>
         <ul class="usr-info full-width white-text">
           <li>{{user.username}}</li>
           <li>{{user.basic.email}}</li>
           <li>{{user.bio}}</li>
         </ul>
-      </section>
+      </li>
       <li>
         <form data-ng-if="user.editing" class="user-form animated zoomIn text-center">
           <label for="user{{user._id}}">Edit User</label>
@@ -17,19 +17,17 @@
           <button class="center type-button button" type="button" data-ng-click="editToggle(user)">Cancel</button>
         </form>
       </li>
-
       <li class="show-posted-songs-btn pull-up" data-ng-init='getSongs(user)'>
         <h3> total user points: {{user.points}} </h3>
-      <button data-ng-click="songs.show = true">Show Posted Songs</button>
-      <button data-ng-if="songs.show" data-ng-click="songs.show = false">Hide Posted Songs</button>
-      <section data-ng-if='songs.show'>
-
+        <button data-ng-click="songs.show = true">Show Posted Songs</button>
+        <button data-ng-if="songs.show" data-ng-click="songs.show = false">Hide Posted Songs</button>
+        <li data-ng-if='songs.show'>
           <ul data-ng-repeat='song in user.songs'>
             <li ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)">    {{song.songUrl}}
             </li>
           </ul>
         </li>
-      </section>
+      </li>
     </ul>
-  </section>
+  </div>
 </main>
