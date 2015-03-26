@@ -1,6 +1,6 @@
 <main class="main-content center-box" data-ng-controller="usersController" data-ng-init='getAllUsers()'>
   <div class="user-container ">
-    <ul data-ng-repeat="user in users" class="center-box usr-in-usr">
+    <ul data-ng-repeat="user in users | orderBy:'-points'" class="center-box usr-in-usr">
       <li class="user-position full-width">
         <img src={{user.avatar}}>
         <ul class="usr-info full-width white-text">
@@ -23,7 +23,7 @@
         <button class="style-btn" data-ng-if="songs.show" data-ng-click="songs.show = false">Hide Posted Songs</button>
         <li data-ng-if='songs.show'>
           <ul data-ng-repeat='song in user.songs'>
-            <li ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)">    {{song.songUrl}}
+            <li ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)"> {{song.songUrl}}
             </li>
           </ul>
         </li>

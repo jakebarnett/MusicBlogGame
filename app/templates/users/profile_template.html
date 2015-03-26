@@ -1,9 +1,13 @@
 <main data-ng-controller="usersController" data-ng-init="getUser()" class="full-width">
+
+
+
   <section class="profile-info-box center-box">
     <div class="push-down white-text">Number of votes</div>
     <section>
       <h1>
         {{user.username}}'s profile
+
       </h1>
       <ul>
         <li class="fix-ng-binding"> Email: {{user.basic.email}}</li>
@@ -12,6 +16,7 @@
     </section>
     <img class="profile-pic" src="{{user.avatar}}">
   </section>
+
   <form class="edit-usr-form animated zoomIn edit-user-box" data-ng-if="user.editing">
     <label for="user{{user._id}}">Update Profile</label>
     <input type="text" id="user{{user._id}}" data-ng-model="user.avatar">
@@ -19,6 +24,13 @@
     <button class="users-btn" type="submit" data-ng-click="save(user)">Save Changes</button>
     <button class="users-btn" type="button" data-ng-click="editToggle(user)">Cancel</button>
   </form>
+
   <button class="users-btn show-hidden-box" data-ng-click="editToggle(user)" data-ng-if = "!user.editing">Update Profile</button>
+
+  <button data-ng-click="getSongs(user)">click me</button>
+    <ul data-ng-repeat="song in user.songs">
+      <li ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)">{{song.songUrl}}</li>
+    </ul>
+  </section>
 
 </main>
