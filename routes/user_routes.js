@@ -5,7 +5,6 @@ var eat_auth = require('../lib/eat_auth');
 
 module.exports = function(app, passport, appSecret) {
 
-
   app.use(bodyparser.json());
 
   //gets current user
@@ -59,5 +58,7 @@ module.exports = function(app, passport, appSecret) {
       res.json(req.body);
     });
   });
-  
+
+
+
 };

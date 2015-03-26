@@ -12,7 +12,7 @@ var userSchema = new Schema ({
   avatar: 'String',
   bio: 'String',
   remainingVotes: {type: Number, default: 5},
-  hasSubmitted: {type: Boolean, default: false};
+  hasSubmitted: {type: Boolean, default: false}
   //songs: [{type: Schema.Types.ObjectId, ref:'Song'}]
 });
 

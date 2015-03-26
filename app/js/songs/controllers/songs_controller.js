@@ -37,6 +37,13 @@ module.exports = function(app) {
       });
     }
 
+    $scope.changeSubmissionStatus = function(user) {
+      user.hasSubmitted = true;
+      User.save(user, function() {
+        console.log('submission accepted')
+      })
+    }
+
     $scope.addNew = function(song) {
       Song.create(song, function(data) {
         $scope.songs.push(data);

@@ -28,12 +28,16 @@ userSongsRoutes(router);
 
 app.use('/', router);
 
-var j = schedule.scheduleJob({}, function(err){
+//resets hasSubmitted and remainingVotes on a timer
+var resetVotes = schedule.scheduleJob({}, function(err) {
+  console.log('update timer working')
   if (err) console.log ('schedule: ' + err)
-  User.update({remainingVotes: 5}, function(err){
-    if (err) console.log ('mongoose: ' + err)
+  User.update({}, {remainingVotes: 5, hasSubmitted: false}, {multi: true}, function(err) {
+    if (err) console.log(err);
+    console.log('function is running on timer')
   });
 });
+
 
 app.listen(process.env.PORT || 3000, function() {
   console.log('Server Listening port');
