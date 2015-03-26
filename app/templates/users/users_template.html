@@ -4,7 +4,7 @@
       <li class="user-position full-width">
         <img src={{user.avatar}}>
         <ul class="usr-info full-width white-text">
-          <li>{{user.username}}</li>
+          <li class="pretty">{{user.username}}</li>
           <li>{{user.basic.email}}</li>
           <li>{{user.bio}}</li>
         </ul>
@@ -18,9 +18,9 @@
         </form>
       </li>
       <li class="show-posted-songs-btn pull-up" data-ng-init='getSongs(user)'>
-        <h3>total user points: {{user.points}} </h3>
-        <button class="style-btn" data-ng-click="songs.show = true">Show Posted Songs</button>
-        <button class="style-btn" data-ng-if="songs.show" data-ng-click="songs.show = false">Hide Posted Songs</button>
+        <h3 class="pretty">total user points: {{user.points}} </h3>
+        <button class="users-btn" data-ng-click="songs.show = true">Show Posted Songs</button>
+        <button class="users-btn" data-ng-if="songs.show" data-ng-click="songs.show = false">Hide Posted Songs</button>
         <li data-ng-if='songs.show'>
           <ul data-ng-repeat='song in user.songs'>
             <li ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)">    {{song.songUrl}}

@@ -11,6 +11,7 @@
       </ul>
     </section>
     <img class="profile-pic" src="{{user.avatar}}">
+    <button class="users-btn show-hidden-box" data-ng-click="editToggle(user)" data-ng-if = "!user.editing">Update Profile</button>
   </section>
   <form class="edit-usr-form animated zoomIn edit-user-box" data-ng-if="user.editing">
     <label for="user{{user._id}}">Update Profile</label>
@@ -19,5 +20,4 @@
     <button class="users-btn" type="submit" data-ng-click="save(user)">Save Changes</button>
     <button class="users-btn" type="button" data-ng-click="editToggle(user)">Cancel</button>
   </form>
-  <button class="users-btn show-hidden-box" data-ng-click="editToggle(user)" data-ng-if = "!user.editing">Update Profile</button>
 </main>
