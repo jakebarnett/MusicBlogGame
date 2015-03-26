@@ -3,7 +3,7 @@
 
 
   <section class="profile-info-box center-box">
-    <div class="push-down white-text">Number of votes</div>
+    <div class="push-down white-text">Number of votes {{user.points}}</div>
     <section>
       <h1>
         {{user.username}}'s profile
@@ -27,7 +27,7 @@
 
   <button class="users-btn show-hidden-box" data-ng-click="editToggle(user)" data-ng-if = "!user.editing">Update Profile</button>
 
-  <button data-ng-click="getSongs(user)">click me</button>
+  <section data-ng-if="user" data-ng-init="getSongs(user)">
     <ul data-ng-repeat="song in user.songs">
       <li ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)">{{song.songUrl}}</li>
     </ul>
