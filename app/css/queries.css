@@ -1,126 +1,100 @@
 /*TABLET*/
 @media (max-width: 1100px){
-
   header{
-    box-shadow: 0 0 .5em;
-  }
+    box-shadow: 0 0 .5em;}
 
   .app-logo{
     margin-top: .1em;
-    font-size: 2.5em;
-  }
+    font-size: 2.5em;}
 
   .vote-box{
     width: 10%;
     margin-left: 0em;
-    border-bottom-right-radius: 8em;
-  }
+    border-bottom-right-radius: 8em;}
 
   .user-container{
     background: rgba(0, 0, 0, 0.96);
-    margin-top: -5em;
-  }
+    margin-top: -5em;}
 
   .main-content{
-    width: 100%;
-  }
+    width: 100%;}
 
   .save-btn{
     width: 50%;
-    box-shadow: 0 0 .2em;
-  }
+    box-shadow: 0 0 .2em;}
 
   .create-user-wrapper{
     margin-top: 1em;
-    width: 80%;
-  }
+    width: 80%;}
 
   .song-style-wrapper{
-    width: 95%;
-  }
+    width: 95%;}
 
   .usr-info{
     margin-top: .5em;
-    font-size: 1.2em;
-  }
+    font-size: 1.2em;}
 
 /*dont turn on tablet size*/
   .settings-img{
-    display: none;
-  }
+    display: none;}
 
 /*dont turn on tablet size*/
   .main-search{
-    display: none;
-  }
+    display: none;}
 
 /*dont turn on tablet size*/
   .search-img{
-    display: none;
-  }
+    display: none;}
 
   .heart-icon{
-    width: 30%;
-  }
+    width: 30%;}
 
   .nav-list{
-    padding: 0;
-  }
+    padding: 0;}
 
   .nav-list li{
     margin: .2em;
     padding: 0;
     display: block;
     text-align: left;
-    font-size: 1.5em;
-  }
+    font-size: 1.5em;}
 
   .menu-show{
     display: block;
     font-size: 2em;
     margin-top: .3em;
-    margin-right: .1em;
-  }
+    margin-right: .1em;}
 
 /*on click show tablet size*/
   .main-nav-bar{
     margin: 0;
     margin-top: 3.1em;
-    display: none;
-  }
+    display: none;}
 
   .nav-list li:hover{
-    padding: 0em;
-  }
+    padding: 0em;}
 
 /*on click show tablet size*/
   .settings-box{
-    display: none;
-  }
+    display: none;}
 
   .user-position{
-    height: 15em;
-  }
+    height: 15em;}
 
   .show-hidden-box{
     position: fixed;
     top: .9em;
     right: 3em;
-    z-index: 100
-  }
+    z-index: 100}
 
   .edit-usr-form{
     margin-top: -3.5em;
-    width: 70%;
+    width: 70%;}
   }
-
-}
 /*MOBILE*/
 @media (max-width: 600px){
-
   header{
-    box-shadow: 0 0 .5em;
-  }
+    box-shadow: 0 0 .5em;}
 
   .vote-box{
     border: 1px solid black;
@@ -131,19 +105,16 @@
     float: right;
     transition: all .2s;
     width: 20%;
-    position: static;
-  }
+    position: static;}
 
   .icon-img{
     width: 100%;
     height: 2em;
-    cursor: pointer;
-  }
+    cursor: pointer;}
 
 /*on click show mobile*/
   .main-nav-bar{
-    display: none;
-  }
+    display: none;}
 
   .flex-container{
     width: 100%;
@@ -151,14 +122,13 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    align-items: center;
-  }
+    align-items: center;}
 
   .ng-scope{
     margin-top: -1em;
     width: 100%;
-    transition: all .3s;
-  }
+    transition: all .3s;}
+
   /*form*/
   .ng-valid,
   .ng-valid-email{
@@ -166,110 +136,90 @@
     outline: none;
     display: block;
     width: 90%;
-    transition: all .3s;
-  }
+    transition: all .3s;}
 
   .save-btn{
     width: 50%;
-    box-shadow: 0 0 .2em;
-  }
+    box-shadow: 0 0 .2em;}
 
   .user-container{
-    margin-top: 7.5em;
-  }
+    margin-top: 7.5em;}
 
   .user-position{
     margin-top: 4em;
     height: 17em;
-    width: 100vw;
-  }
+    width: 100vw;}
 
   img{
     border-radius: 0;
-    width: 25%;
-  }
+    width: 25%;}
 
   .usr-info{
     margin-top: .5em;
-    font-size: 1.2em;
-  }
+    font-size: 1.2em;}
 
   .enter-song-form{
-    margin-top: 10em;
-  }
+    margin-top: 10em;}
+
 /*song box-iframe*/
   .ng-binding{
-    width: 100%;
-  }
+    width: 100%;}
 
   iframe{
     width: 90%;
-    margin-top: 2em;
-  }
-/*song box-iframe*/
+    margin-top: 2em;}
 
+/*song box-iframe*/
   .create-user-wrapper{
     margin-top: 7.5em;
-    width: 90%;
-  }
+    width: 90%;}
 
   .title-bg{
-    margin-top: -2.8em;
-  }
+    margin-top: -2.8em;}
 
   .settings-img{
-    display: none;
-  }
+    display: none;}
 
   .heart-icon{
-    width: 20%;
-  }
+    width: 20%;}
 
   .menu-show{
     display: block;
-    font-size: 2em;
-  }
+    font-size: 2em;}
+
 /*on click show mobile*/
   .settings-box{
-    display: none;
-  }
+    display: none;}
 
   .show-hidden-box{
     width: 30%;
     position: fixed;
     top: 5.3em;
     right: .1em;
-    z-index: 100
-  }
+    z-index: 100}
 
   .profile-info-box{
     width: 100%;
-    margin-top: 5em;
-  }
+    margin-top: 5em;}
 
   .profile-info-box section{
     width: 100%;
     height: 15vh;
     position: absolute;
     top: 9em;
-    margin: auto;
-  }
+    margin: auto;}
 
   .profile-info-box div{
     right: .5em;
-    color: white;
-  }
+    color: white;}
 
   .profile-pic{
     left: 1em;
     border-radius: 0;
     box-shadow: 0 0 .1em rgba(0, 170, 129, 1);
-    width: 25%;
-  }
+    width: 25%;}
 
   .edit-usr-form{
     margin-top: 0em;
-    width: 70%;
+    width: 70%;}
   }
-
-}
