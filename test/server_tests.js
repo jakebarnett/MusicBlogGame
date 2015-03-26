@@ -6,6 +6,7 @@ var moment = require('moment');
 
 var userId;
 var songId;
+var token;
 
 chai.use(chaihttp);
 
@@ -19,11 +20,8 @@ describe('the user routes', function() {
     .send({username:"alex", email:"test", avatar:"testurl"})
     .end(function(err, res) {
       expect(err).to.eql(null);
-      expect(res.body).to.have.property('_id');
-      expect(res.body.username).to.eql('alex');
-      expect(res.body.email).to.eql('test');
-      expect(res.body.avatar).to.eql('testurl');
-      userId = res.body._id;
+      expect(res.body).to.have.property('eat');
+      token = res.body.eat;
       done();
     });
   });
@@ -36,8 +34,22 @@ describe('the user routes', function() {
       expect(Array.isArray(res.body)).to.be.true;
       expect(res.body[0]).to.have.property('_id');
       expect(res.body[0]).to.have.property('username');
-      expect(res.body[0]).to.have.property('email');
+      expect(res.body[0].basic).to.have.property('email');
       expect(res.body[0]).to.have.property('avatar');
+      done();
+    });
+  });
+
+  it('should get current user', function(done) {
+    chai.request('localhost:3000')
+    .get('/user/currentuser')
+    .set("eat", token)
+    .end(function(err, res) {
+      expect(err).to.eql(null);
+      expect(res.body.username).to.eql('alex');
+      expect(res.body.avatar).to.eql('testurl');
+      expect(res.body.basic.email).to.eql('test');
+      userId = res.body._id;
       done();
     });
   });
@@ -61,6 +73,7 @@ describe('the song routes', function() {
   it('should create a song', function(done) {
     chai.request('localhost:3000')
     .post('/songs')
+    .set("eat", token)
     .send({songUrl:"testurl"})
     .end(function(err, res) {
       expect(err).to.eql(null);
@@ -76,6 +89,7 @@ describe('the song routes', function() {
     var today = moment().format('MM DD YY');
     chai.request('localhost:3000')
     .get('/songs')
+    .set("eat", token)
     .end(function(err, res) {
       expect(err).to.eql(null);
       expect(Array.isArray(res.body)).to.be.true;
@@ -84,9 +98,16 @@ describe('the song routes', function() {
     });
   });
 
-  // it("should be able to update an existing song's point value", function(done) {
-
-  // });
+  it("should be able to update an existing song's point value", function(done) {
+    chai.request('localhost:3000')
+    .put('/songs/' + songId)
+    .set("eat", token)
+    .send({points:"1"})
+    .end(function(err, res) {
+      expect(err).to.eql(null);
+      done();
+    });
+  });
 });
 
 describe('the userSongs routes', function () {
@@ -94,13 +115,15 @@ describe('the userSongs routes', function () {
   it('should get all songs posted by a user', function(done) {
     chai.request('localhost:3000')
     .get('/userSongs/' + userId)
+    .set("eat", token)
     .end(function(err, res) {
       expect(err).to.eql(null);
-      expect(Array.isArray(res.body)).to.be.true;
-      // expect(res.body[0].postedBy).to.eql(userId);
-      // expect(res.body[0]).to.have.property('_id');
-      // expect(res.body[0]).to.have.property('songUrl');
-      done(console.log(res.body));
+      console.log(res.body);
+      expect(res.body.points).to.eql(1);
+      expect(res.body.songs[0]).to.have.property('_id');
+      expect(res.body.songs[0]).to.have.property('songUrl');
+      expect(res.body.songs[0].points).to.eql(1);
+      done();
     });
   });
 
