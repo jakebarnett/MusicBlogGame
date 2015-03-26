@@ -1,6 +1,6 @@
 <main class="main-content center-box" data-ng-controller="usersController" data-ng-init='getAllUsers()'>
   <div class="user-container ">
-    <ul data-ng-repeat="user in users | orderBy:'-points'" class="center-box usr-in-usr">
+    <ul data-ng-repeat="user in users | orderBy:'-(points + bonusPoints)'" class="center-box usr-in-usr">
       <li class="user-position full-width">
         <img src={{user.avatar}}>
         <ul class="usr-info full-width white-text">
@@ -18,7 +18,7 @@
         </form>
       </li>
       <li class="show-posted-songs-btn pull-up" data-ng-init='getSongs(user)'>
-        <h3 class="pretty">total user points: {{user.points}} </h3>
+        <h3 class="pretty">total user points: {{user.points + user.bonusPoints}} </h3>
         <button class="users-btn" data-ng-click="songs.show = true">Show Posted Songs</button>
         <button class="users-btn" data-ng-if="songs.show" data-ng-click="songs.show = false">Hide Posted Songs</button>
         <li data-ng-if='songs.show'>
