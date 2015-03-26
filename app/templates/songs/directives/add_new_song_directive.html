@@ -1,4 +1,4 @@
-<section class="title-bg clearfix center-box">
+<section data-ng-if="!user.hasSubmitted" class="title-bg clearfix center-box">
   <form class="flex-box text-center center-box enter-song-form animated bounceInLeft">
     <label for="song-input">Upload Your Song</label>
     <input class="inputUrl" type="text" data-ng-model="song.songUrl">
