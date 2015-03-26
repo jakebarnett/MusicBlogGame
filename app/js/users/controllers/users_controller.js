@@ -91,5 +91,12 @@ module.exports = function(app) {
       }
     };
 
+    $scope.addBonusPoints = function(user) {
+      user.bonusPoints = user.bonusPoints + 5;
+      User.save(user, function() {
+        console.log("5 bonus points!")
+      });
+    }
+
   }]);
 };
