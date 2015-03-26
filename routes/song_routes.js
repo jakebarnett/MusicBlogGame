@@ -48,7 +48,7 @@ module.exports = function(app, appSecret) {
     Song.find()
     .where('postedDate').equals(today)
     .sort('-points')
-    //.populate('postedBy', '')
+    //.populate('postedBy')
     .exec(function(err, data) {
       if (err) console.log(err);
       res.json(data);
