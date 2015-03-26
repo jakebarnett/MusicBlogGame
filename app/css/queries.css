@@ -24,7 +24,7 @@
     box-shadow: 0 0 .2em;}
 
   .create-user-wrapper{
-    margin-top: 1em;
+    margin-top: -5.4em;
     width: 80%;}
 
   .song-style-wrapper{
@@ -100,7 +100,16 @@
 
   .wide-btn{
     width: 75%;}
+
+  .votes-position{
+    width: 10%;
+    right: .5em;
+    top: .4em;}
+
+  .title-bg{
+    margin-top: -7em;}
   }
+
 /*MOBILE*/
 @media (max-width: 600px){
   header{
@@ -181,11 +190,11 @@
 
 /*song box-iframe*/
   .create-user-wrapper{
-    margin-top: 7em;
+    margin-top: 7.1em;
     width: 90%;}
 
   .title-bg{
-    margin-top: -2.8em;}
+    margin-top: -3em;}
 
   .settings-img{
     display: none;}
@@ -241,4 +250,9 @@
 
   .wide-btn{
     width: 86%;}
+
+  .votes-position{
+    width: 10%;
+    top: 2em;}
   }
+
