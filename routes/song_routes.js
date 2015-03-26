@@ -30,33 +30,17 @@ module.exports = function(app, appSecret) {
     .select('songUrl')
     .exec(function(err, data) {
       if (err) console.log(err);
-
       var totalpoints = 0;
-
       var getTotal = function (arrayofobjects) {
         for(var i = 0; i < arrayofobjects.length; i++) {
-        totalpoints += arrayofobjects[i].points;
+          totalpoints += arrayofobjects[i].points;
         }
       }
-
       getTotal(data);
-
       console.log(totalpoints);
-
       res.json({songs: data, points: totalpoints});
     });
   });
-
-  // //get a song points from a user
-  // app.get('/userSongPoints/:userId', function(req, res) {
-  //   Song.find()
-  //   .where('postedBy').equals(req.params.userId)
-  //   .select('points')
-  //   .exec(function(err, data) {
-  //     if (err) console.log(err);
-  //     res.json(data);
-  //   });
-  // });
 
   //gets all songs posted same day
   app.get('/songs', eat_auth(appSecret), function(req, res) {

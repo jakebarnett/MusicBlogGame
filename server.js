@@ -5,7 +5,7 @@ var Song = require('./models/song_model');
 var bodyparser = require('body-parser');
 var moment = require('moment');
 var passport = require('passport');
-
+var schedule = require('node-schedule');
 
 var app = express();
 app.set('appSecret', process.env.SECRET || 'changethischangethis!');
@@ -18,7 +18,6 @@ var userSongsRoutes = require('./routes/usersongs_routes');
 
 mongoose.connect(process.env.MONG_URI || 'mongodb://localhost/muder_music');
 
-
 app.use(express.static(__dirname + '/build'));
 
 var router =  express.Router();
@@ -28,6 +27,13 @@ songRoutes(router, app.get('appSecret'));
 userSongsRoutes(router);
 
 app.use('/', router);
+
+var j = schedule.scheduleJob({}, function(err){
+  if (err) console.log ('schedule: ' + err)
+  User.update({remainingVotes: 5}, function(err){
+    if (err) console.log ('mongoose: ' + err)
+  });
+});
 
 app.listen(process.env.PORT || 3000, function() {
   console.log('Server Listening port');
