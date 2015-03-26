@@ -35,7 +35,7 @@ musicApp.config(['$routeProvider', function($routeProvider) {
     controller: 'songsController'
   })
   .when('/', {
-    redirectTo: '/songs'
+    redirectTo: '/sign_in'
   })
   .when('/profile', {
     templateUrl: 'templates/users/profile_template.html',
