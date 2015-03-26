@@ -8,7 +8,7 @@ module.exports = function(app) {
     };
 
     var Song = resource('songs');
-    var User = resource('songs');
+    var User = resource('user');
 
     $scope.upVote = function(song) {
       song.points = song.points + 1;

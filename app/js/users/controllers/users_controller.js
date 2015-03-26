@@ -44,7 +44,7 @@ module.exports = function(app) {
      })
      .success(function(data) {
        $cookies.eat = data.eat;
-       $location.path('/');
+       $location.path('/songs');
      });
     };
 
@@ -56,7 +56,7 @@ module.exports = function(app) {
       })
       .success(function(data) {
         $cookies.eat = data.eat;
-        $location.path('/');
+        $location.path('/songs');
       });
     };
 
