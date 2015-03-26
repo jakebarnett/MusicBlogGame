@@ -1,76 +1,50 @@
-.main-content{
-  margin-top: 10em;
-}
-
-.main-header{
-  width: 100%;
-  background-color: rgba(0, 170, 129, 1);
-  z-index: 2;
-}
+.pull-up-10{
+  margin-top: 10em;}
 
 .app-logo{
   float: left;
   font-size: 3em;
   color: white;
-  margin-top: .1em;
-}
+  margin-top: .1em;}
 
 .main-nav-bar{
   width: 100%;
   height: auto;
   background-color: rgb(28, 29, 28);
   margin-top: 3.7em;
-  z-index: 2;
-}
+  z-index: 2;}
 
 .nav-list{
   width: 100%;
-  text-align: center;
-}
+  text-align: center;}
 
 .nav-list li{
   color: white;
   font-size: 1.5em;
   display: inline;
   transition: all .2s;
-  margin: 4.5em;
-}
-
-/*create user BODY*/
-.create-usr-img{
-  margin-top: -3.9em;
-  background: url(../img/bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-color: honeydew;
-  background-blend-mode: multiply;
-}
+  margin: 4.5em;}
 
 .createUser-form{
   text-align: center;
   width: 100%;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto;}
 
 .create-user-wrapper{
   color: rgba(0, 170, 129, 1);
-  margin-top: 10.5em;
+  margin-top: 10.4em;
   box-shadow: 0 0 .8em rgba(0, 145, 112, 0.93);
-  width: 70%;
+  width: 40%;
   height: auto;
   background: rgb(28, 29, 28);
   z-index: -1;
-  -webkit-animation-duration: 8s;
-}
+  -webkit-animation-duration: 8s;}
 
 /*enter song form*/
 .enter-song-form{
   margin-top: 3em;
-  background: rgba(29, 25, 24, 1);
-}
+  background: rgba(29, 25, 24, 1);}
 
 /*form*/
 .ng-valid,
@@ -82,17 +56,15 @@
   outline: none;
   display: block;
   padding: .8em;
-  width: 70%;
-/*  text-align: left;*/
-}
+  width: 80%;
+/*  text-align: left;*/}
 
 .save-btn{
   color: rgba(0, 170, 129, 1);
   font-size: 1.2em;
   padding: .8em;
   border: none;
-  cursor: pointer;
-}
+  cursor: pointer;}
 
 .user-form{
   background: rgba(0, 0, 0, 0.95);
@@ -104,141 +76,113 @@
   left: 0; right: 0; top: 0; bottom: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-}
+  background-position: center;}
 
 .edit-user-btn{
   background-color: rgb(0, 164, 124);
   box-shadow: 0 0 .5em;
   width: 20%;
-  margin-left: 1.9em;
-}
+  margin-left: 1.9em;}
 
 .user-container{
   overflow: hidden;
   margin-top: -4em;
   width: 100%;
   height: auto;
-  background-color: rgba(0, 170, 129, 0.44);
-}
+  background-color: rgba(0, 170, 129, 0.44);}
 
 .usr-in-usr{
   margin-top: 1em;
   margin-bottom: 5em;
-  width: 80%;
-}
+  width: 80%;}
 
 .usr-info{
   text-align: left;
   margin-bottom: 10em;
-  margin: 0;
-}
+  margin: 0;}
 
 .usr-info li{
-  margin-bottom: .1em;
-}
+  margin-bottom: .1em;}
 
 /*add song*/
 [for="song-input"]{
-  font-size: 2em;
-}
+  font-size: 2em;}
 
 .inputUrl{
   border: none;
   outline: none;
   width: 50%;
-  padding: .6em;
-}
+  padding: .6em;}
 
 .style-btn{
-  padding: .6em;
+  padding: .8em;
   border: none;
   outline: none;
   cursor: pointer;
-  color: rgba(0, 170, 129, 1);
-}
+  color: rgba(0, 170, 129, 1);}
 
-.text-center{
-  text-align: center;
-}
-
-/*.type-button{
-  width: 20%;
-}*/
+.wide-btn{
+  width: 53%;}
 
 .submit{
-  width: 40%;
-}
+  width: 40%;}
 
 .button{
   background: antiquewhite;
   padding: .5em;
   border: none;
   outline: none;
-  color: rgb(0, 163, 123);
-}
+  color: rgb(0, 163, 123);}
 
 /*songs*/
 .song-style-wrapper{
   width: 80%;
   margin-top: 4.1em;
-  margin-bottom: 5em;
-}
+  margin-bottom: 5em;}
 
 [for="upload"]{
   z-index: 3;
-  color: black;
-}
+  color: black;}
 
 .title-bg{
   background-color: rgba(0, 170, 129, 0.12);
   width: 98%;
   margin-top: -5em;
   overflow: hidden;
-  padding-bottom: 1.4em;
-}
+  padding-bottom: 1.4em;}
 
 .white-text{
-  color: antiquewhite;
-}
+  color: antiquewhite;}
 
 .icon-img{
   width: 99%;
-  cursor: pointer;
-}
+  cursor: pointer;}
 
 /*dont turn on Desktop size*/
 .menu-show{
-  display: none;
-}
+  display: none;}
 
 .menu-icon{
   color: rgb(28, 29, 28);
-  cursor: pointer;
-}
+  cursor: pointer;}
 
 /*logout box*//*logout box*//*logout box*//*logout box*/
 .settings-box{
-  display: none;
-}
+  display: none;}
 
 .edit-user-box{
   margin-top: -1em;
   background: rgb(28, 29, 28);
-  width: 40%;
-}
+  width: 40%;}
 
 .edit-usr-form{
   box-shadow: 0 0 .3em antiquewhite;
-  overflow: hidden;
-}
+  overflow: hidden;}
 
 .signIn-form{
   width: 60%;
   margin-top: 17em;
-  background: rgb(28, 29, 28);
-}
+  background: rgb(28, 29, 28);}
 
 .signIn-form input{
-  width: 50%;
-}
+  width: 50%;}

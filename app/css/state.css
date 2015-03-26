@@ -1,34 +1,24 @@
 input:focus{
-  box-shadow: 0 0 .1em white;
-  border: 1px solid rgba(0, 170, 129, 1);
-}
+  box-shadow: 0 0 .5em rgba(0, 170, 129, 1);}
 
 .inputUrl:focus{
-  box-shadow: 0 0 .1 white;
-}
+  box-shadow: 0 0 .1 white;}
 
 .edit-user-btn:hover{
-  cursor: pointer;
-}
+  cursor: pointer;}
 
 .edit-user-btn:active{
-  box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
-}
+  box-shadow: 0 0 .2em rgba(0, 170, 129, 1);}
 
 .icon-img:active{
-  width: 95%;
-}
+  width: 95%;}
 
 .nav-list li:hover{
   color: rgba(0, 170, 129, 1);
-  cursor: pointer;
-}
+  cursor: pointer;}
 
-.add-song-btn:active{
-  padding: .58em;
-  box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
-}
+.style-btn:active{
+  box-shadow: 0 0 .2em rgba(0, 170, 129, 1);}
 
 .users-btn:active{
-  color: rgba(0, 170, 129, 1);
-}
+  color: rgba(0, 170, 129, 1);}
