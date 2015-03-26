@@ -115,14 +115,14 @@
   padding: .6em;}
 
 .style-btn{
-  padding: .6em;
+  padding: .8em;
   border: none;
   outline: none;
   cursor: pointer;
   color: rgba(0, 170, 129, 1);}
 
-/*.type-button{
-  width: 20%;}*/
+.wide-btn{
+  width: 53%;}
 
 .submit{
   width: 40%;}

@@ -1,6 +1,5 @@
 input:focus{
-  box-shadow: 0 0 .1em white;
-  border: 1px solid rgba(0, 170, 129, 1);}
+  box-shadow: 0 0 .5em rgba(0, 170, 129, 1);}
 
 .inputUrl:focus{
   box-shadow: 0 0 .1 white;}
@@ -18,8 +17,7 @@ input:focus{
   color: rgba(0, 170, 129, 1);
   cursor: pointer;}
 
-.add-song-btn:active{
-  padding: .58em;
+.style-btn:active{
   box-shadow: 0 0 .2em rgba(0, 170, 129, 1);}
 
 .users-btn:active{

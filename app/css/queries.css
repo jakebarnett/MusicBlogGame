@@ -90,6 +90,16 @@
   .edit-usr-form{
     margin-top: -3.5em;
     width: 70%;}
+
+  .signIn-form{
+    margin-top: 14em;
+    width: 85%;}
+
+  .signIn-form input{
+    width: 70%;}
+
+  .wide-btn{
+    width: 75%;}
   }
 /*MOBILE*/
 @media (max-width: 600px){
@@ -222,4 +232,13 @@
   .edit-usr-form{
     margin-top: 0em;
     width: 70%;}
+
+  .signIn-form{
+    margin-top: 13em;}
+
+  .signIn-form input{
+    width: 80%;}
+
+  .wide-btn{
+    width: 86%;}
   }
