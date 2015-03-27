@@ -247,6 +247,11 @@ module.exports = function(app) {
       });
     };
 
+    $scope.signOut = function() {
+      $cookies.eat = '';
+      console.log('signed out')
+    };
+
     $scope.save = function(user) {
       User.save(user, function() {
         user.editing = false;
