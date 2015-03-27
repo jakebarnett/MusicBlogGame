@@ -24,6 +24,7 @@ input:focus{
   color: rgba(0, 170, 129, 1);}
 
 a:hover{
+  text-shadow: 0 0 .2em black;
   color: rgba(0, 170, 129, 1);
   transition: color .3s;
 }

@@ -228,3 +228,8 @@
   position: fixed;
   top: 0; left: 0; right: 0;
   margin: auto;}
+
+.logOut-btn{
+  position: fixed;
+  right: .2em; top: .2em;
+}
