@@ -20,7 +20,7 @@ require('./users/directives/create_user_directive')(musicApp);
 require('./songs/directives/vote_on_song_directive')(musicApp);
 require('./songs/directives/add_new_song_directive')(musicApp);
 require('./users/directives/user_songs_directive')(musicApp);
-
+require('./songs/directives/header_directive')(musicApp);
 
 musicApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -51,7 +51,7 @@ musicApp.config(['$routeProvider', function($routeProvider) {
   })
 }]);
 
-},{"./../../bower_components/angular-base64/angular-base64.js":9,"./../../bower_components/angular-cookies/angular-cookies.js":10,"./../../bower_components/angular-route/angular-route.js":12,"./../../bower_components/angular/angular":13,"./services/resource_service":2,"./songs/controllers/songs_controller.js":3,"./songs/directives/add_new_song_directive":4,"./songs/directives/vote_on_song_directive":5,"./users/controllers/users_controller":6,"./users/directives/create_user_directive":7,"./users/directives/user_songs_directive":8}],2:[function(require,module,exports){
+},{"./../../bower_components/angular-base64/angular-base64.js":10,"./../../bower_components/angular-cookies/angular-cookies.js":11,"./../../bower_components/angular-route/angular-route.js":13,"./../../bower_components/angular/angular":14,"./services/resource_service":2,"./songs/controllers/songs_controller.js":3,"./songs/directives/add_new_song_directive":4,"./songs/directives/header_directive":5,"./songs/directives/vote_on_song_directive":6,"./users/controllers/users_controller":7,"./users/directives/create_user_directive":8,"./users/directives/user_songs_directive":9}],2:[function(require,module,exports){
 module.exports = function(app) {
   var handleError = function(data) {
     console.log(data);
@@ -164,6 +164,17 @@ module.exports = function(app) {
 
 },{}],5:[function(require,module,exports){
 module.exports = function(app) {
+  app.directive('headerDirective', function() {
+    return {
+      restrict: 'A',
+      templateUrl: '/templates/songs/directives/header_directive.html',
+      replace: true
+    };
+  });
+};
+
+},{}],6:[function(require,module,exports){
+module.exports = function(app) {
   app.directive('voteOnSongDirective', function() {
     return {
       restrict: 'A',
@@ -173,7 +184,7 @@ module.exports = function(app) {
   });
 };
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 module.exports = function(app) {
 
   app.controller('usersController', ['$scope', 'resource', '$http', '$cookies', '$location', '$base64', '$sce',
@@ -277,7 +288,7 @@ module.exports = function(app) {
   }]);
 };
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 module.exports = function(app) {
   app.directive('createUserDirective', function() {
     return {
@@ -288,7 +299,7 @@ module.exports = function(app) {
   });
 };
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 module.exports = function(app) {
   app.directive('userSongsDirective', function() {
     return {
@@ -299,7 +310,7 @@ module.exports = function(app) {
   });
 };
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 (function() {
     'use strict';
 
@@ -467,7 +478,7 @@ module.exports = function(app) {
 
 })();
 
-},{}],10:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 /**
  * @license AngularJS v1.3.15
  * (c) 2010-2014 Google, Inc. http://angularjs.org
@@ -675,7 +686,7 @@ angular.module('ngCookies', ['ng']).
 
 })(window, window.angular);
 
-},{}],11:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 /**
  * @license AngularJS v1.3.15
  * (c) 2010-2014 Google, Inc. http://angularjs.org
@@ -3145,7 +3156,7 @@ if (window.jasmine || window.mocha) {
 
 })(window, window.angular);
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 /**
  * @license AngularJS v1.3.15
  * (c) 2010-2014 Google, Inc. http://angularjs.org
@@ -4136,7 +4147,7 @@ function ngViewFillContentFactory($compile, $controller, $route) {
 
 })(window, window.angular);
 
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 /**
  * @license AngularJS v1.3.15
  * (c) 2010-2014 Google, Inc. http://angularjs.org
@@ -30446,7 +30457,7 @@ var minlengthDirective = function() {
 })(window, document);
 
 !window.angular.$$csp() && window.angular.element(document).find('head').prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}</style>');
-},{}],14:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 'use strict';
 
 require('../../app/js/client');
@@ -30534,7 +30545,7 @@ describe('songs controller', function () {
 
   });
 });
-},{"../../app/js/client":1,"./../../bower_components/angular-mocks/angular-mocks.js":11}],15:[function(require,module,exports){
+},{"../../app/js/client":1,"./../../bower_components/angular-mocks/angular-mocks.js":12}],16:[function(require,module,exports){
 'use strict';
 
 require('../../app/js/client');
@@ -30615,4 +30626,4 @@ describe('users controller', function () {
 
   });
 });
-},{"../../app/js/client":1,"./../../bower_components/angular-mocks/angular-mocks.js":11}]},{},[14,15]);
+},{"../../app/js/client":1,"./../../bower_components/angular-mocks/angular-mocks.js":12}]},{},[15,16]);

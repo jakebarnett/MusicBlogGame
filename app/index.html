@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="css/animate.min.css">
   </head>
   <body data-ng-app="musicApp">
-    <header class="box-fix top-fixed flex-container">
+    <header data-ng-controller="usersController" data-ng-init="getUser()" class="box-fix top-fixed flex-container">
       <h1 class="app-logo">Muder Music</h1>
       <section class="menu-show">
         <h2 class="menu-icon">&#9776;</h2>
       </section>
-      <div class="alert1 alert-box">
+      <div data-ng-if="user.hasSubmitted" class="alert1 alert-box">
       <p>Song submitted + 5 !</p></div>
-      <div class="alert2 alert-box">
+      <div data-ng-if="user.remainingVotes < 1" class="alert2 alert-box">
       <p>Voted + 5 !</p></div>
     </header>
 <!--     <section class="settings-box">
