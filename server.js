@@ -7,6 +7,7 @@ var moment = require('moment');
 var passport = require('passport');
 var schedule = require('node-schedule');
 
+
 var app = express();
 app.set('appSecret', process.env.SECRET || 'changethischangethis!');
 app.use(passport.initialize());
@@ -28,8 +29,10 @@ userSongsRoutes(router);
 
 app.use('/', router);
 
+console.log('booya')
+
 //resets hasSubmitted and remainingVotes on a timer
-var resetVotes = schedule.scheduleJob({hour: 24}, function(err) {
+var resetVotes = schedule.scheduleJob({hour: 0}, function(err) {
   console.log('update timer working')
   if (err) console.log ('schedule: ' + err)
   User.update({}, {remainingVotes: 5, hasSubmitted: false}, {multi: true}, function(err) {

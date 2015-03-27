@@ -101,6 +101,7 @@ module.exports = function(app) {
 
     $scope.songs = [];
 
+
     $scope.deliberatelyTrustDangerousSnippet = function(html) {
       return $sce.trustAsHtml(html);
     };
@@ -120,7 +121,7 @@ module.exports = function(app) {
       Song.save(song, function() {
         console.log('booya');
       });
-    }
+    };
 
     $scope.getAllSongs = function() {
       Song.getAll(function(data) {
@@ -135,12 +136,22 @@ module.exports = function(app) {
       });
     }
 
+    $scope.checkValue = function(user) {
+      if (user.remainingVotes < 1) {
+        user.bonusPoints = user.bonusPoints + 5;
+        User.save(user, function() {
+          console.log('happy');
+        })
+      }
+    };
+
     $scope.changeSubmissionStatus = function(user) {
       user.hasSubmitted = true;
+      user.bonusPoints = user.bonusPoints + 5;
       User.save(user, function() {
         console.log('submission accepted')
       })
-    }
+    };
 
     $scope.addNew = function(song) {
       Song.create(song, function(data) {

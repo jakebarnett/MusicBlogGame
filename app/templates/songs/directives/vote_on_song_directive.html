@@ -3,10 +3,10 @@
     <img class="heart-icon" src="img/heart.png">{{song.points}}
   </span>
   <section class="vote-icons" data-ng-if = "user.remainingVotes > 0" class="flex-center m-position">
-    <span class="span-box pull-up" data-ng-click="upVote(song); save(song); changeVotes(user)">
+    <span class="span-box pull-up" data-ng-click="upVote(song); save(song); changeVotes(user); checkValue(user)">
       <img src="img/like.png" alt="like picture btn" class="icon-img" title="up vote this song">
     </span>
-    <span data-ng-click="downVote(song); save(song); changeVotes(user)">
+    <span data-ng-click="downVote(song); save(song); changeVotes(user); checkValue(user)">
       <img src="img/unlike.png" alt="unlike picture btn" class="icon-img" title="down vote this song">
     </span>
   </section>
