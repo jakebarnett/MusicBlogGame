@@ -54,6 +54,7 @@ table {
 a,
 a:active,
 a:hover{
+  color: white;
   text-decoration: none;
 }
 

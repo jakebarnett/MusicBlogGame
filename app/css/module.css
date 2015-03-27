@@ -2,13 +2,11 @@
   margin-top: 10em;}
 
 .app-logo{
-  float: left;
   font-size: 3em;
   color: white;
   margin-top: .1em;}
 
 .main-nav-bar{
-  width: 100%;
   height: auto;
   background-color: rgb(28, 29, 28);
   margin-top: 3.7em;
@@ -50,7 +48,6 @@
 .ng-valid,
 .ng-valid-email{
   border: none;
-  margin-top: .8em;
   margin-left: auto;
   margin-right: auto;
   outline: none;
@@ -157,10 +154,6 @@
 .icon-img{
   width: 99%;
   cursor: pointer;}
-
-/*dont turn on Desktop size*/
-.menu-show{
-  display: none;}
 
 .menu-icon{
   color: rgb(28, 29, 28);

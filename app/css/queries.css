@@ -51,7 +51,7 @@
     padding: 0;}
 
   .nav-list li{
-    margin: .2em;
+    margin: 1em;
     padding: 0;
     text-align: left;
     font-size: 1.5em;}
@@ -68,7 +68,7 @@
     margin-top: 3.1em;}
 
   .nav-list li:hover{
-    padding: 0em;}
+    padding: 0;}
 
 /*on click show tablet size*/
   .settings-box{
@@ -93,11 +93,6 @@
   .wide-btn{
     width: 74.4%;}
 
-/*  .votes-position{
-    width: 10%;
-    right: .5em;
-    top: .4em;}*/
-
   .title-bg{
     margin-top: -7em;}
 
@@ -105,16 +100,13 @@
     width: 100%;}
 
   .profile-info-box{
-    width: 100%;
     margin-top: -8em;}
 
   .profile-info-box section{
-    left: 6em;
-    width: 100%;
+    left: 7em;
+    width: 60%;
     text-align: left;
-    position: absolute;
-    top: 11.5em;
-    margin: auto;}
+    top: 6.5em;}
 
   .profile-pic{
     top: .5em;
@@ -153,19 +145,20 @@
 
 /*MOBILE*/
 @media (max-width: 600px){
+  .song-style-wrapper{
+    margin-top: 16em;}
+
   header{
+    text-align: center;
     box-shadow: 0 0 .5em;}
 
   .vote-box{
-    border: 1px solid black;
-    border-bottom-right-radius: 0;
     border-bottom-right-radius-radius: 0;
     width: 60px;
     height: 10em;
     margin-top: -15em;
     float: right;
-    transition: all .2s;
-    position: static;}
+    transition: all .2s;}
 
   .vote-box img{
     width: 80%;}
@@ -175,20 +168,8 @@
     height: 2em;
     cursor: pointer;}
 
-/*on click show mobile*/
-/*  .main-nav-bar{
-    display: none;}*/
-
-  .flex-container{
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;}
-
   .ng-scope{
-    margin-top: -1em;
+    margin-top: 2.8em;
     transition: all .3s;}
 
   /*form*/
@@ -208,9 +189,7 @@
     margin-top: 2em;}
 
   .user-position{
-    margin-top: 4em;
-    height: 17em;
-    width: 100%;}
+    margin-top: 4em;}
 
   img{
     border-radius: 0;
@@ -258,23 +237,15 @@
     margin-top: 2.5em;}
 
   .profile-info-box section{
-    font-size: .8em;
-    left: 9.5em;
-    width: 70%;
-    width: 100%;
-    text-align: left;
-    position: absolute;
-    top: 10.5em;
-    margin: auto;}
+    font-size: .9em;
+    left: 8.5em;
+    top: 7em;}
 
   .profile-pic{
-    left: 1em;
-    border-radius: 0;
-    box-shadow: 0 0 .1em rgba(0, 170, 129, 1);
     width: 100px;}
 
   .edit-usr-form{
-    margin-top: 0em;
+    margin-top: 0;
     width: 70%;}
 
   .signIn-form{
@@ -291,15 +262,10 @@
     top: 2em;}
 
   .user-points{
-    width: 20%;
-    color: white;
-    top: .6em;
-    right: .1em;
-    z-index: 2;}
+    width: 30%;}
 
   .votes-position{
-    top: 1.2em;
-    background: rgb(0, 170, 129);
-    width: 25%;}
+    right: 0;
+    top: 1.2em;}
   }
 
