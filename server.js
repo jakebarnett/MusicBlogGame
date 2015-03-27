@@ -29,7 +29,7 @@ userSongsRoutes(router);
 app.use('/', router);
 
 //resets hasSubmitted and remainingVotes on a timer
-var resetVotes = schedule.scheduleJob({}, function(err) {
+var resetVotes = schedule.scheduleJob({hour: 14}, function(err) {
   console.log('update timer working')
   if (err) console.log ('schedule: ' + err)
   User.update({}, {remainingVotes: 5, hasSubmitted: false}, {multi: true}, function(err) {
