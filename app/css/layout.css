@@ -73,17 +73,18 @@
 .vote-box{
   border: 1px solid black;
   width: 7%;
-  margin-top: -18.5em;
+  margin-top: -15.8em;
   float: left;
   background: rgb(0, 170, 129);
   height: 10.5em;
   z-index: -1;
-  margin-left: -2em;}
+  margin-left: 4em;}
 
 /*videos en la pagina pricipal*/
 .ng-binding{
-  float: right;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   margin-bottom: 1.5em;}
 
 .flex-center{
@@ -171,7 +172,7 @@
   border-radius: 0;
   box-shadow: 0 0 .4em rgba(0, 170, 129, 1);
   width: 20%;
-  z-index: 100;}
+  z-index: 1;}
 
 .fix-ng-binding{
   margin-top: -1.2em;}
@@ -183,3 +184,13 @@
   width: 5%;
   font-size: 2em;
   right: 0;}
+
+.vote-icons{
+  position: absolute;
+  left: .8em;
+  bottom: 0;}
+
+.vote-icons img{
+    width: 100%;
+    display: block;}
+
