@@ -1,14 +1,11 @@
 <section data-ng-controller="usersController" data-ng-init="getUser()">
   <div class="votes-position">{{user.remainingVotes}}</div>
-  <section data-ng-if="user.remainingVotes < 1" data-ng-init="addBonusPoints(user)"></section>
-  <section data-ng-if="user.hasSubmitted" data-ng-init="addBonusPoints(user)"></section>
   <section data-ng-controller="songsController" data-ng-init="getAllSongs()">
     <section data-add-new-song-directive></section>
     <ul data-ng-repeat="song in songs" class="song-style-wrapper center-box">
       <li class="" ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)">
         {{song.songUrl}}
       </li>
-      <!-- <li>Song posted by : {{song.postedBy.username}}</li> -->
       <li data-vote-on-song-directive></li>
     </ul>
   </section>
