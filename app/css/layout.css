@@ -211,21 +211,20 @@
   z-index: 2;}
 
 .alert{
-  box-shadow: 0 0 .8em rgb(28, 29, 28);
-  background: rgb(28, 29, 28);
   width: 100%;
-  height: auto;
-  margin-top: 5.4em;}
+  height: auto;}
 
 .alert p{
+  z-index: 3000;
   padding: .2em;
-  font-size: 2em;
+  font-size: 1.2em;
   color: antiquewhite;}
 
 .alert-boxes{
-  display: none;
+  overflow: hidden;
+  z-index: 3000;
   width: 20em;
-  height: 20em;
+  height: auto;
   position: fixed;
-  margin: 2em;
-  top: 4em; left: 0;}
+  top: 0; left: 0; right: 0;
+  margin: auto;}
