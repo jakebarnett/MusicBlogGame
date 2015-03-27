@@ -5,10 +5,10 @@ var eat = require('eat');
 
 var userSchema = new Schema ({
   basic: {
-    email: 'String',
+    email: {type:String, unique: true, dropDups: true },
     password: 'String'
   },
-  username: 'String',
+  username: {type: String, unique: true, dropDups: true },
   avatar: 'String',
   bio: 'String',
   remainingVotes: {type: Number, default: 5},
