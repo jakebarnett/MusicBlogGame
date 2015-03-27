@@ -127,4 +127,10 @@ describe('the userSongs routes', function () {
     });
   });
 
+  after(function(done){
+		mongoose.connection.db.dropDatabase(function(){
+			done();
+		});
+	});
+
 });
