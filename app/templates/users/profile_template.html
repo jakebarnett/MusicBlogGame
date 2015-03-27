@@ -1,8 +1,8 @@
 <main data-ng-controller="usersController" data-ng-init="getUser()" class="full-width">
   <section class="profile-info-box center-box">
-    <div class="push-down white-text">Number of votes {{user.points + user.bonusPoints}}</div>
+    <div class="push-down white-text">{{user.points + user.bonusPoints}}</div>
     <section>
-      <h1>
+      <h1 class="pretty">
         {{user.username}}'s profile
       </h1>
       <ul>

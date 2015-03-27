@@ -18,7 +18,7 @@
         </form>
       </li>
       <li class="show-posted-songs-btn pull-up" data-ng-init='getSongs(user)'>
-        <h3 class="pretty">total user points: {{user.points + user.bonusPoints}} </h3>
+        <h3 class="pretty user-points">{{user.points + user.bonusPoints}} </h3>
         <button class="users-btn" data-ng-click="songs.show = true">Show Posted Songs</button>
         <button class="users-btn" data-ng-if="songs.show" data-ng-click="songs.show = false">Hide Posted Songs</button>
         <li data-ng-if='songs.show'>
