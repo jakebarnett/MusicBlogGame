@@ -8,7 +8,7 @@
     font-size: 2.5em;}
 
   .vote-box{
-    width: 10%;
+    width: 65px;
     margin-left: 2em;}
 
   .user-container{
@@ -22,7 +22,7 @@
     box-shadow: 0 0 .2em;}
 
   .create-user-wrapper{
-    margin-top: -5.4em;
+    margin-top: -6em;
     width: 80%;}
 
   .song-style-wrapper{
@@ -77,7 +77,9 @@
     display: none;}
 
   .user-position{
-    height: 15em;}
+    padding-bottom: 2.5em;
+    margin-top: -1em;
+    height: auto;}
 
   .edit-usr-form{
     margin-top: 0;
@@ -93,10 +95,10 @@
   .wide-btn{
     width: 74.4%;}
 
-  .votes-position{
+/*  .votes-position{
     width: 10%;
     right: .5em;
-    top: .4em;}
+    top: .4em;}*/
 
   .title-bg{
     margin-top: -7em;}
@@ -109,27 +111,52 @@
     margin-top: -8em;}
 
   .profile-info-box section{
-    left: 11em;
-    width: 70%;
+    left: 6em;
     width: 100%;
     text-align: left;
     position: absolute;
-    top: 12em;
+    top: 11.5em;
     margin: auto;}
 
   .profile-info-box div{
-    right: 1em;
-    color: white;}
+    top: 4em;
+    position: fixed;
+    z-index: 100;
+    right: 0;}
 
   .profile-pic{
     top: .5em;
     left: 1em;
     border-radius: 0;
     box-shadow: 0 0 .1em rgba(0, 170, 129, 1);
-    width: 25%;}
+    width: 150px;}
 
   fieldset{
     padding-bottom: 2.2em;}
+
+  .menu-icon{
+    display: none;}
+
+  .usr-in-usr{
+    width: 100%;}
+
+  .user-points{
+    background: rgba(0, 170, 129, 1);
+    color: white;
+    top: .6em;
+    right: .1em;
+    z-index: 2;}
+
+  img{
+    margin: 0 auto;}
+
+  .medium-img{
+    margin-bottom: 1em;}
+
+  .votes-position{
+    top: .8em;
+    background: rgb(0, 170, 129);
+    width: 12%;}
   }
 
 /*MOBILE*/
@@ -141,13 +168,15 @@
     border: 1px solid black;
     border-bottom-right-radius: 0;
     border-bottom-right-radius-radius: 0;
-    width: 6%;
+    width: 60px;
     height: 10em;
     margin-top: -15em;
     float: right;
     transition: all .2s;
-    width: 20%;
     position: static;}
+
+  .vote-box img{
+    width: 80%;}
 
   .icon-img{
     width: 100%;
@@ -184,7 +213,7 @@
     box-shadow: 0 0 .2em;}
 
   .user-container{
-    margin-top: 7.1em;}
+    margin-top: 2em;}
 
   .user-position{
     margin-top: 4em;
@@ -212,7 +241,7 @@
 
 /*song box-iframe*/
   .create-user-wrapper{
-    margin-top: 7.1em;
+    margin-top: 5em;
     width: 90%;}
 
   .title-bg{
@@ -247,16 +276,15 @@
     margin: auto;}
 
   .profile-info-box div{
-    top: 5.2em;
+    top: 4em;
     right: .5em;
     color: white;}
 
   .profile-pic{
-    top: 6.5em;
     left: 1em;
     border-radius: 0;
     box-shadow: 0 0 .1em rgba(0, 170, 129, 1);
-    width: 25%;}
+    width: 100px;}
 
   .edit-usr-form{
     margin-top: 0em;
@@ -275,5 +303,18 @@
     width: 10%;
     top: 2em;}
 
+  .user-points{
+    width: 20%;
+    background: rgba(0, 170, 129, 1);
+    color: white;
+    top: .6em;
+    right: .1em;
+    z-index: 2;}
+
+  .votes-position{
+    top: 1.2em;
+    background: rgb(0, 170, 129);
+    width: 25%;}
+  }
   }
 
