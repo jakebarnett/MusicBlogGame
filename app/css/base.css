@@ -52,8 +52,8 @@ table {
 }
 
 a,
-a:active,
-a:hover{
+a:active{
+  color: white;
   text-decoration: none;
 }
 
@@ -122,3 +122,4 @@ label{
 fieldset{
   text-align: center;
 }
+

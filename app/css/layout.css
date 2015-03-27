@@ -1,3 +1,14 @@
+/*Modifiers*/
+.icon-img{
+  width: 99%;
+  cursor: pointer;}
+
+.wide-btn{
+  width: 53%;}
+
+.submit{
+  width: 40%;}
+
 .top-fixed{
   position: fixed;
   left: 0; top: 0;}
@@ -7,6 +18,9 @@
 
 .center-text{
   text-align: center;}
+
+.float-right{
+  float: right;}
 
 .float-left{
   float: left;
@@ -24,7 +38,7 @@
 
 .text-center{
   text-align: center;}
-
+/*Modifiers*/
 .songs-view{
   width: 80%;}
 
@@ -39,15 +53,6 @@
   padding: .2em;
   border-radius: 1em;
   border: none;}
-
-.flex-container{
-  width: 100%;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: space-around;
-  align-items: stretch;}
 
 .flex-box{
   width: 60%;
@@ -66,9 +71,6 @@
   display:flex;
   flex-direction: column;}
 
-.upload-song-div{
-  float: right;}
-
 .vote-box{
   border: 1px solid black;
   width: 70px;
@@ -85,7 +87,7 @@
   margin-right: auto;
   width: 80%;
   margin-bottom: 1.5em;}
-
+/*videos en la pagina pricipal*/
 .flex-center{
   width: 100%;
   display:flex;
@@ -107,20 +109,14 @@
   width: 80%;
   cursor: pointer;}
 
-.search-img{
-  margin-top: .5em;
-  width: 70%;
-  cursor: pointer;
-  z-index: 50;}
-
 .users-btn{
+  margin-top: -5em;
   box-shadow: 0 0 .2em rgba(0, 0, 0, 1);
-  padding: .4em;
+  padding: .8em;
   color: antiquewhite;
   background: rgb(28, 29, 28);
   border: none;
-  cursor: pointer;
-  margin: .1em;}
+  cursor: pointer;}
 
 .pull-up{
   margin-top: -2em;}
@@ -144,7 +140,7 @@
   background: rgb(28, 29, 28);
   color: white;
   padding-top: 2em;
-  margin-top: -4em;
+  margin-top: -4.2em;
   margin-bottom: 1em;
   position: relative;
   height: 12em;}
@@ -154,7 +150,7 @@
   width: 50%;
   height: 10em;
   position: absolute;
-  top: 12.9em; left: 0; right: 0; bottom: 0;
+  top: 11em; left: 0; right: 0; bottom: 0;
   margin: auto;}
 
 .profile-info-box div{
@@ -200,8 +196,10 @@
   bottom: 0;}
 
 .vote-icons img{
-    width: 100%;
-    display: block;}
+  margin-top: 1em;
+  margin-bottom: .5em;
+  width: 100%;
+  display: block;}
 
 .user-points{
   width: 15%;
@@ -212,17 +210,21 @@
   background: rgb(28, 29, 28);
   z-index: 2;}
 
-.alert-box{
-  text-align: center;
-  width: 20%;
-  height: 2em;
-  background: white;
-  margin-right: 12em;
-  z-index: 200;
-  margin-top: .5em;
-}
+.alert{
+  width: 100%;
+  height: auto;}
 
-.alert-box p{
-  font-size: 1.5em;
-  margin-top: .2em;
-}
+.alert p{
+  z-index: 3000;
+  padding: .2em;
+  font-size: 1.2em;
+  color: antiquewhite;}
+
+.alert-boxes{
+  overflow: hidden;
+  z-index: 3000;
+  width: 20em;
+  height: auto;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  margin: auto;}

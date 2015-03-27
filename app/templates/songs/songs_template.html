@@ -3,7 +3,7 @@
   <section data-ng-controller="songsController" data-ng-init="getAllSongs()">
     <section data-add-new-song-directive></section>
     <ul data-ng-repeat="song in songs" class="song-style-wrapper center-box">
-      <li ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)">
+      <li class="" ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)">
         {{song.songUrl}}
       </li>
       <li data-vote-on-song-directive></li>
