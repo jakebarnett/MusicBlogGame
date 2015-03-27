@@ -22,7 +22,7 @@
     box-shadow: 0 0 .2em;}
 
   .create-user-wrapper{
-    margin-top: -6em;
+    margin-top: -5em;
     width: 80%;}
 
   .song-style-wrapper{
@@ -53,7 +53,6 @@
   .nav-list li{
     margin: .2em;
     padding: 0;
-    display: block;
     text-align: left;
     font-size: 1.5em;}
 
@@ -66,8 +65,7 @@
 /*on click show tablet size*/
   .main-nav-bar{
     margin: 0;
-    margin-top: 3.1em;
-    display: none;}
+    margin-top: 3.1em;}
 
   .nav-list li:hover{
     padding: 0em;}
@@ -118,12 +116,6 @@
     top: 11.5em;
     margin: auto;}
 
-  .profile-info-box div{
-    top: 4em;
-    position: fixed;
-    z-index: 100;
-    right: 0;}
-
   .profile-pic{
     top: .5em;
     left: 1em;
@@ -141,7 +133,7 @@
     width: 100%;}
 
   .user-points{
-    background: rgba(0, 170, 129, 1);
+    background: rgba(28, 29, 28, 1);
     color: white;
     top: .6em;
     right: .1em;
@@ -184,8 +176,8 @@
     cursor: pointer;}
 
 /*on click show mobile*/
-  .main-nav-bar{
-    display: none;}
+/*  .main-nav-bar{
+    display: none;}*/
 
   .flex-container{
     width: 100%;
@@ -241,7 +233,7 @@
 
 /*song box-iframe*/
   .create-user-wrapper{
-    margin-top: 5em;
+    margin-top: 7.2em;
     width: 90%;}
 
   .title-bg{
@@ -275,11 +267,6 @@
     top: 10.5em;
     margin: auto;}
 
-  .profile-info-box div{
-    top: 4em;
-    right: .5em;
-    color: white;}
-
   .profile-pic{
     left: 1em;
     border-radius: 0;
@@ -305,7 +292,6 @@
 
   .user-points{
     width: 20%;
-    background: rgba(0, 170, 129, 1);
     color: white;
     top: .6em;
     right: .1em;
@@ -315,6 +301,5 @@
     top: 1.2em;
     background: rgb(0, 170, 129);
     width: 25%;}
-  }
   }
 

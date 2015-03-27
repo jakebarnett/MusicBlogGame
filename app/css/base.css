@@ -81,6 +81,7 @@ footer p{
 }
 
 img{
+  margin: 0 auto;
 	border-radius: 500em;
 	border: none;
 	width: 20%;

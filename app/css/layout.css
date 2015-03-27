@@ -145,6 +145,7 @@
   color: white;
   padding-top: 2em;
   margin-top: -4em;
+  margin-bottom: 1em;
   position: relative;
   height: 12em;}
 
@@ -158,13 +159,15 @@
 
 .profile-info-box div{
   width: 20%;
-  background: rgba(0, 170, 129, 1);
+  left: 0;
+  top: 7em;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  background: rgba(28, 29, 28, 1);
   height: 1em;
   font-size: 2em;
-  z-index: 100;
-  position: fixed;
-  right: .2em;
-  margin-top: -2.9em;
+  position: absolute;
   border-radius: 1em;
 }
 
