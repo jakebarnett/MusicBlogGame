@@ -118,12 +118,6 @@
   cursor: pointer;
   color: rgba(0, 170, 129, 1);}
 
-.wide-btn{
-  width: 53%;}
-
-.submit{
-  width: 40%;}
-
 .button{
   background: antiquewhite;
   padding: .5em;
@@ -150,10 +144,6 @@
 
 .white-text{
   color: antiquewhite;}
-
-.icon-img{
-  width: 99%;
-  cursor: pointer;}
 
 .menu-icon{
   color: rgb(28, 29, 28);

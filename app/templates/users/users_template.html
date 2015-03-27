@@ -2,7 +2,7 @@
   <div class="user-container ">
     <ul data-ng-repeat="user in users | orderBy:'-(points + bonusPoints)'" class="center-box usr-in-usr">
       <li class="user-position full-width">
-        <img src={{user.avatar}}>
+        <img src={{user.avatar}} alt="user's image avatar">
         <ul class="usr-info full-width white-text">
           <li class="pretty">{{user.username}}</li>
           <li>{{user.basic.email}}</li>

@@ -1,4 +1,4 @@
-<main data-ng-controller="usersController" data-ng-init="getUser()" class="full-width">
+ <main data-ng-controller="usersController" data-ng-init="getUser()" class="full-width">
   <section class="profile-info-box center-box">
     <div class="push-down white-text">{{user.points + user.bonusPoints}}</div>
     <section>
@@ -10,7 +10,7 @@
         <li class="fix-ng-binding"> Bio: {{user.bio}}</li>
       </ul>
     </section>
-    <img class="profile-pic" src="{{user.avatar}}">
+    <img class="profile-pic" src="{{user.avatar}}" alt="profile picture">
     <button class="users-btn show-hidden-box" data-ng-click="editToggle(user)" data-ng-if = "!user.editing">Update Profile</button>
   </section>
   <form class="edit-usr-form animated zoomIn edit-user-box" data-ng-if="user.editing">

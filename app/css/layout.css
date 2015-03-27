@@ -1,3 +1,14 @@
+/*Modifiers*/
+.icon-img{
+  width: 99%;
+  cursor: pointer;}
+
+.wide-btn{
+  width: 53%;}
+
+.submit{
+  width: 40%;}
+
 .top-fixed{
   position: fixed;
   left: 0; top: 0;}
@@ -7,6 +18,9 @@
 
 .center-text{
   text-align: center;}
+
+.float-right{
+  float: right;}
 
 .float-left{
   float: left;
@@ -24,7 +38,7 @@
 
 .text-center{
   text-align: center;}
-
+/*Modifiers*/
 .songs-view{
   width: 80%;}
 
@@ -57,9 +71,6 @@
   display:flex;
   flex-direction: column;}
 
-.float-right{
-  float: right;}
-
 .vote-box{
   border: 1px solid black;
   width: 70px;
@@ -76,7 +87,7 @@
   margin-right: auto;
   width: 80%;
   margin-bottom: 1.5em;}
-
+/*videos en la pagina pricipal*/
 .flex-center{
   width: 100%;
   display:flex;
@@ -97,12 +108,6 @@
   margin-top: .5em;
   width: 80%;
   cursor: pointer;}
-
-.search-img{
-  margin-top: .5em;
-  width: 70%;
-  cursor: pointer;
-  z-index: 50;}
 
 .users-btn{
   margin-top: -5em;

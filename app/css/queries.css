@@ -1,4 +1,3 @@
-/*TABLET*/
 @media (max-width: 1100px){
   header{
     box-shadow: 0 0 .5em;}
@@ -51,10 +50,7 @@
     padding: 0;}
 
   .nav-list li{
-    margin: 1em;
-    padding: 0;
-    text-align: left;
-    font-size: 1.5em;}
+    margin: 1em;}
 
   .menu-show{
     display: block;
@@ -62,17 +58,12 @@
     margin-top: .3em;
     margin-right: .1em;}
 
-/*on click show tablet size*/
   .main-nav-bar{
     margin: 0;
     margin-top: 3.1em;}
 
   .nav-list li:hover{
     padding: 0;}
-
-/*on click show tablet size*/
-  .settings-box{
-    display: none;}
 
   .user-position{
     padding-bottom: 2.5em;
@@ -153,7 +144,6 @@
     box-shadow: 0 0 .5em;}
 
   .vote-box{
-    border-bottom-right-radius-radius: 0;
     width: 60px;
     height: 10em;
     margin-top: -15em;
@@ -161,7 +151,11 @@
     transition: all .2s;}
 
   .vote-box img{
-    width: 80%;}
+    width: 60%;}
+
+
+  .nav-list li{
+   font-size: 1.3em;}
 
   .icon-img{
     width: 100%;
@@ -209,8 +203,8 @@
   iframe{
     width: 90%;
     margin-top: 2em;}
-
 /*song box-iframe*/
+
   .create-user-wrapper{
     margin-top: 7.2em;
     width: 90%;}
@@ -221,16 +215,9 @@
   .settings-img{
     display: none;}
 
-  .heart-icon{
-    width: 20%;}
-
   .menu-show{
     display: block;
     font-size: 2em;}
-
-/*on click show mobile*/
-  .settings-box{
-    display: none;}
 
   .profile-info-box{
     width: 100%;
