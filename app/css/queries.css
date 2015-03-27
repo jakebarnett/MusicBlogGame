@@ -9,10 +9,9 @@
 
   .vote-box{
     width: 10%;
-    margin-left: 0em;}
+    margin-left: 2em;}
 
   .user-container{
-    background: rgba(0, 0, 0, 0.96);
     margin-top: -6.5em;}
 
   .main-content{
@@ -144,7 +143,7 @@
     border-bottom-right-radius-radius: 0;
     width: 6%;
     height: 10em;
-    margin-top: -18em;
+    margin-top: -15em;
     float: right;
     transition: all .2s;
     width: 20%;
