@@ -211,3 +211,12 @@
   right: .1em;
   background: rgb(28, 29, 28);
   z-index: 2;}
+
+.alert-box{
+  margin-left: 10em;
+  width: 20%;
+  height: 2em;
+  background: white;
+  margin-right: 1em;
+  z-index: 200;
+}
