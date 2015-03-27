@@ -211,3 +211,18 @@
   right: .1em;
   background: rgb(28, 29, 28);
   z-index: 2;}
+
+.alert-box{
+  text-align: center;
+  width: 20%;
+  height: 2em;
+  background: white;
+  margin-right: 12em;
+  z-index: 200;
+  margin-top: .5em;
+}
+
+.alert-box p{
+  font-size: 1.5em;
+  margin-top: .2em;
+}
