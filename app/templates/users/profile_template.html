@@ -26,8 +26,6 @@
     <button class="users-btn" type="button" data-ng-click="editToggle(user)">Cancel</button>
   </form>
 
-  <button class="users-btn show-hidden-box" data-ng-click="editToggle(user)" data-ng-if = "!user.editing">Update Profile</button>
-
   <section data-ng-if="user" data-ng-init="getSongs(user)">
     <ul data-ng-repeat="song in user.songs">
       <li ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)">{{song.songUrl}}</li>
