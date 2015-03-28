@@ -7,6 +7,7 @@
   margin-top: .1em;}
 
 .main-nav-bar{
+  padding: .2em;
   height: auto;
   background-color: rgb(28, 29, 28);
   margin-top: 3.7em;
@@ -160,7 +161,7 @@
 
 .edit-usr-form{
   margin-top: 0;
-  box-shadow: 0 0 .3em antiquewhite;
+  box-shadow: 0 0 .3em rgb(0, 170, 129);
   overflow: hidden;}
 
 .signIn-form{

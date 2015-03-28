@@ -132,6 +132,9 @@
     top: .8em;
     background: rgb(0, 170, 129);
     width: 12%;}
+
+  .logOut-btn{
+    width: 3%;}
   }
 
 /*MOBILE*/
@@ -159,7 +162,7 @@
 
 
   .nav-list li{
-   font-size: 1.3em;}
+   font-size: 1.2em;}
 
   .icon-img{
     width: 100%;
@@ -258,6 +261,10 @@
   .votes-position{
     right: 0;
     top: 1.2em;}
+
+  .logOut-btn{
+    top: 1.1em;
+    width: 4%;}
   }
 
 @media (max-width: 360px){
