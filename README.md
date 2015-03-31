@@ -8,9 +8,9 @@ Users submit songs and vote on other user's submissions to earn points. Each use
 
 Scoring:
 
-Submitting your daily song: +5 points
-Using your 5 daily votes: +5 points
-Posting a good song:  1 positive vote = +1 points, 1 negative vote = -1 points.
+Submitting your daily song: +5 points \n
+Using your 5 daily votes: +5 points \n
+Posting a song:  1 positive vote = +1 points, 1 negative vote = -1 points.
 
 This application was build using NodeJS, Express, AngularJS, and MongoDB.
 
