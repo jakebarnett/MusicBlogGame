@@ -1,6 +1,6 @@
 # Muder Music
 
-[muder-music.herokuapp.com](muder-music.herokuapp.com)
+[http://muder-music.herokuapp.com](muder-music.herokuapp.com)
 
 A place to share and find new music.
 
