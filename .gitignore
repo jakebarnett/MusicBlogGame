@@ -4,3 +4,4 @@ npm-debug.log
 .jshintrc
 bower_components
 build
+test/karma_tests
