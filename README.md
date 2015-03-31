@@ -20,10 +20,16 @@ This application was build using NodeJS, Express, AngularJS, and MongoDB.
 
 ####Authors:
 Jake Barnett
+
+
 Emmanuel Santos
+
+
 Josh Landry
 
 ####To Do:
 
 Update Instructions page
+
+
 Update point statistics visualization
