@@ -16,7 +16,6 @@ Using your 5 daily votes: +5 points
 
 Posting a song:  1 positive vote = +1 points, 1 negative vote = -1 points.
 
-This application was build using NodeJS, Express, AngularJS, and MongoDB.
 
 ####Authors:
 Jake Barnett
@@ -27,9 +26,16 @@ Emmanuel Santos
 
 Josh Landry
 
+
+This application was build using NodeJS, Express, AngularJS, and MongoDB.
+
+
 ####To Do:
 
 Update Instructions page
 
 
 Update point statistics visualization
+
+
+Forms need more validation/feedback
