@@ -4,7 +4,7 @@
   cursor: pointer;}
 
 .wide-btn{
-  width: 53%;}
+  width: 54%;}
 
 .submit{
   width: 40%;}
@@ -110,8 +110,7 @@
   cursor: pointer;}
 
 .users-btn{
-  margin-top: -5em;
-  box-shadow: 0 0 .2em rgba(0, 0, 0, 1);
+  box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
   padding: .8em;
   color: antiquewhite;
   background: rgb(28, 29, 28);
@@ -231,5 +230,7 @@
 
 .logOut-btn{
   position: fixed;
-  right: .2em; top: .2em;
+  right: .5em;
+  top: 1em;
+  width: 2%;
 }
