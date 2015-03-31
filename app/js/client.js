@@ -45,6 +45,9 @@ musicApp.config(['$routeProvider', function($routeProvider) {
     templateUrl: 'templates/users/sign_in_template.html',
     controller: 'usersController'
   })
+  .when('/instructions', {
+    templateUrl: 'templates/songs/instructions.html'
+  })
   .otherwise({
     templateUrl: 'templates/four_oh_four.html'
   })
