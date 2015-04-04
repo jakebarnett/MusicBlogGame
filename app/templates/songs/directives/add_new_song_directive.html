@@ -3,5 +3,7 @@
     <label for="song-input">Upload Your Song</label>
     <input class="inputUrl" name="songUrl" type="text" data-ng-model="song.songUrl" data-ng-pattern="/iframe.*iframe/g">
     <button ng-disabled="add_song.songUrl.$invalid" type="submit" class="style-btn" data-ng-click="addNew(song); changeSubmissionStatus(user)">Submit</button>
+    <p><a href="#/instructions">Copy and Paste the embedded link to your song</a></p>
+    <p><a href="#/instructions"> Not sure what that means?  Click here for instructions</a></p>
   </form>
 </section>
