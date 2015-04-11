@@ -1,0 +1,73 @@
+.createUser-form{
+  @include col(4/4);
+  background-color: $secondary-color;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.enter-song-form{
+  margin-top: 3em;
+  background: $secondary-color;
+  @media (max-width: 500px){
+    margin-top: 10em;
+    @include col(4/4);
+  }
+}
+
+.edit-usr-form{
+  margin-top: 0;
+  box-shadow: 0 0 .3em rgb(0, 170, 129);
+  overflow: hidden;
+  @media (max-width: 1100px){
+    margin-top: 0;
+    width: 70%;
+  }
+}
+
+.signIn-form{
+  width: 50%;
+  margin-top: 17em;
+  background: rgb(28, 29, 28);
+  @media (max-width: 1100px){
+    margin-top: 14em;
+    width: 85%;
+  }
+}
+
+.signIn-form input{
+  width: 50%;
+  @media (max-width: 1100px){
+    width: 70%;
+  }
+}
+
+input,
+label,
+[type="submit"]{
+  color: rgb(28, 29, 28);
+  padding: .3em;
+  margin-top: .7em;
+  margin-bottom: .7em;
+  &:focus{
+    box-shadow: 0 0 .5em rgba(0, 170, 129, 1);
+  }
+}
+
+input{
+  border-radius: .2em;
+}
+
+legend{
+  font-size: 2em;
+  color: white;
+}
+
+label{
+  font-size: 1.5em;
+  color: rgba(0, 170, 129, 1);
+}
+
+fieldset{
+  text-align: center;
+}

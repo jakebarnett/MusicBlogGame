@@ -1,0 +1,8 @@
+// only logic code goes in here....
+
+@mixin btn-fix($size, $padding, $radius, $border){
+  font-size: $size;
+  padding: $padding;
+  border-radius: $radius;
+  border: $border;
+}

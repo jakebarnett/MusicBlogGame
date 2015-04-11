@@ -1,0 +1,185 @@
+.user-position{
+  box-sizing: border-box;
+  padding: 2em;
+  margin-top: -1.5em;
+  background: rgba(28, 29, 28, 1);
+  display:flex;
+  flex-direction: column;
+  @media (max-width: 1100px){
+    padding-bottom: 2.5em;
+    margin-top: -1em;
+  }
+  @media (max-width: 500px){
+    margin-top: 4em;
+  }
+}
+
+.vote-box{
+  border: 1px solid black;
+  width: 70px;
+  margin-top: -15.8em;
+  float: left;
+  background: rgb(0, 170, 129);
+  height: 10.5em;
+  z-index: -1;
+  margin-left: 4em;
+  @media (max-width: 1100px){
+    width: 65px;
+    margin-left: 2em;
+  }
+  @media (max-width: 500px){
+    width: 60px;
+    height: 10em;
+    margin-top: -15em;
+    float: right;
+    transition: all .2s;
+    img{
+      width: 60%;
+    }
+  }
+}
+
+.ng-binding{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 1.5em;
+  @media (max-width: 500px){
+    width: 100%;
+  }
+}
+
+.song-points{
+  font-size: 1.3em;
+  margin-top: 1em;}
+
+.header-nav li{
+  display: inline-block;}
+
+
+.show-hidden-box{
+  box-shadow: 0 0 .5 rgba(0, 0, 0, 1);
+  position: absolute;
+  right: 0em; bottom: 0}
+
+.log-in-box{
+  display: inline-block;}
+
+.profile-info-box{
+  width: 100%;
+  background: rgb(28, 29, 28);
+  color: white;
+  padding-top: 2em;
+  margin-top: -4.2em;
+  margin-bottom: 1em;
+  position: relative;
+  height: 12em;
+  @media (max-width: 1100px){
+    margin-top: -8em;
+  }
+}
+
+.profile-info-box section{
+  font-size: 1.2em;
+  width: 50%;
+  height: 10em;
+  position: absolute;
+  top: 11em; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  @media (max-width: 1100px){
+    left: 7em;
+    width: 60%;
+    text-align: left;
+    top: 6.5em;
+  }
+}
+
+.profile-info-box div{
+  width: 20%;
+  left: 0;
+  top: 7em;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  background: rgba(28, 29, 28, 1);
+  height: 1em;
+  font-size: 2em;
+  position: absolute;
+  border-radius: 1em;
+}
+
+.profile-pic{
+  position: absolute;
+  left: 1.5em; top: 0; bottom: 0;
+  margin: auto;
+  border-radius: 0;
+  box-shadow: 0 0 .4em rgba(0, 170, 129, 1);
+  width: 200px;
+  z-index: 1;
+  @media (max-width: 1100px){
+    top: .5em;
+    left: 1em;
+    border-radius: 0;
+    box-shadow: 0 0 .1em rgba(0, 170, 129, 1);
+    width: 150px;
+  }
+}
+
+.votes-position{
+  color: white;
+  border-radius: .5em;
+  background: rgb(28, 29, 28);
+  position: fixed;
+  z-index: 101;
+  top: 1.5em;
+  width: 10%;
+  font-size: 2em;
+  right: 1em;
+  @media (max-width: 1100px){
+    top: .8em;
+    background: rgb(0, 170, 129);
+    width: 12%;
+  }
+  @media (max-width: 500px){
+    right: 0;
+    top: 1.2em;
+  }
+}
+
+.vote-icons{
+  position: absolute;
+  left: .8em;
+  bottom: 0;}
+
+.vote-icons img{
+  margin-top: 1em;
+  margin-bottom: .5em;
+  width: 100%;
+  display: block;}
+
+.user-points{
+  width: 15%;
+  font-size: 3em;
+  top: .6em;
+  border-radius: .7em;
+  right: .1em;
+  background: rgb(28, 29, 28);
+  z-index: 2;
+  @media (max-width: 500px){
+    width: 30%;
+  }
+}
+
+.logOut-btn{
+  position: fixed;
+  right: .5em;
+  top: 1em;
+  width: 2%;
+  @media (max-width: 1100px){
+    width: 3%;
+  }
+  @media (max-width: 500px){
+    top: 1.1em;
+    width: 4%;
+  }
+}

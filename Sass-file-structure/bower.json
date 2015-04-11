@@ -1,0 +1,15 @@
+{
+  "name": "Sass",
+  "version": "0.1.0",
+  "authors": [
+    "DonQuality <santosemmanuel@outlook.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

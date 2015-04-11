@@ -1,0 +1,12 @@
+// only logic code goes in here....
+@mixin letra($size: null, $color: null, $weight: null, $style: null){
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin letra-position($space: null, $position: null){
+  padding: $space;
+  text-align: $position;
+}

@@ -2,15 +2,12 @@
   <form class="signIn-form animated bounceInLeft" name="signInForm">
     <fieldset>
       <legend>
-        <img src="img/signinlogo2.png" alt="myApp logo" class="medium-img">
+        <h1>Muder Music</h1>
       </legend>
-      <div class="pull-up-4">
         <label for="existingUserUsername"></label>
         <input type="text" id="existingUserEmail" data-ng-model="existingUser.basic.email" placeholder="name@email.com" class="push-down">
-  <!--       <label for="existingUserPassword">Password</label> -->
         <input type="password" id="existingUserPassword" data-ng-model="existingUser.basic.password">
         <button type="submit" class="login-btn style-btn wide-btn" data-ng-click="signIn(existingUser)">Sign In</button>
-      </div>
     </fieldset>
     <p class="white-text">not a member?
       <a href="#/create_user" title="create your account" class="pretty">Join us.</a>

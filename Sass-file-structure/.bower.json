@@ -1,0 +1,26 @@
+{
+  "name": "Sass",
+  "version": "0.1.2",
+  "authors": [
+    "DonQuality <santosemmanuel@outlook.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/DonQuality/Sass-file-structure",
+  "_release": "0.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.2",
+    "commit": "e660ef28f0970fd09cad845168f6fd9f12693dbd"
+  },
+  "_source": "git://github.com/DonQuality/Sass-file-structure.git",
+  "_target": "~0.1.2",
+  "_originalSource": "Sass-file-structure",
+  "_direct": true
+}

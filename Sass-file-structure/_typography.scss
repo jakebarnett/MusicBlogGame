@@ -1,0 +1,6 @@
+@import "typography/manifest";
+footer{
+  p{
+    @include letra(1em, white, 100, null);
+  }
+}

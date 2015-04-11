@@ -1,0 +1,58 @@
+@import "buttons/manifest";
+.btn-fix{
+  @include btn-fix(1.2em, .2em, 1em, none);
+}
+
+.save-btn{
+  @include btn-fix(1.2em, .8em, none, none);
+  color: rgba(0, 170, 129, 1);
+  cursor: pointer;
+  @media (max-width: 1100px){
+    width: 50%;
+    box-shadow: 0 0 .2em;
+  }
+}
+
+.edit-user-btn{
+  background-color: rgb(0, 164, 124);
+  box-shadow: 0 0 .5em;
+  width: 20%;
+  &:hover{
+    cursor: pointer;
+  }
+  &:active{
+    box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
+  }
+}
+
+.users-btn{
+  @include btn-fix(1.2em, .8em, none, none);
+  background: rgb(28, 29, 28);
+  box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
+  color: antiquewhite;
+  cursor: pointer;
+  &:active{
+    color: rgba(0, 170, 129, 1);
+  }
+}
+
+.style-btn{
+  @include btn-fix(1.2em, .8em, none, none);
+  cursor: pointer;
+  color: rgba(0, 170, 129, 1);
+  &:focus{
+    outline: none;
+  }
+  &:active{
+    box-shadow: 0 0 .2em rgba(0, 170, 129, 1);
+  }
+}
+
+.button{
+  @include btn-fix(1.2em, .5em, none, none);
+  background: antiquewhite;
+  color: rgb(0, 163, 123);
+  &:focus{
+    outline: none;
+  }
+}

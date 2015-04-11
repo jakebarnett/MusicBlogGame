@@ -1,0 +1,813 @@
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+/**
+ * Grid settings.
+ * All values are defaults and can therefore be easily overidden.
+ */
+/**
+ * List functions courtesy of the wonderful folks at Team Sass.
+ * Check out their awesome grid: Singularity.
+ */
+/**
+ * Get  percentage from a given ratio.
+ * @param {number} [$ratio=1] - The column ratio of the element.
+ * @returns {number} - The percentage value.
+ */
+/**
+ * Work out the column widths based on the ratio and gutter sizes.
+ * @param {number} [$ratios=1] - The column ratio of the element.
+ * @param {number} [$gutter=$jeet-gutter] - The gutter for the column.
+ * @returns {list} $width $gutter - A list containing the with and gutter for the element.
+ */
+/**
+ * Get the set layout direction for the project.
+ * @returns {string} $direction - The layout direction.
+ */
+/**
+ * Replace a specified list value with a new value (uses built in set-nth() if available)
+ * @param {list} $list - The list of values you want to alter.
+ * @param {number} $index - The index of the list item you want to replace.
+ * @param {*} $value - The value you want to replace $index with.
+ * @returns {list} $list - The list with the value replaced or removed.
+ * @warn if an invalid index is supplied.
+ */
+/**
+ * Reverse a list (progressively enhanced for Sass 3.3)
+ * @param {list} $list - The list of values you want to reverse.
+ * @returns {list} $result - The reversed list.
+ */
+/**
+ * Get the opposite direction to a given value.
+ * @param {string} $dir - The direction you want the opposite of.
+ * @returns {string} - The opposite direction to $dir.
+ * @warn if an incorrect string is provided.
+ */
+/**
+ * Perform a value into a percentage value.
+ * @param {number} $value - The value which should be converted.
+ * @returns {number} $value - The percentage.
+ */
+/**
+ * Style an element as a column with a gutter.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$offset=0] - A offset specified as a fraction (see $ratios).
+ * @param {number} [$cycle=0] - Easily create an nth column grid where $cycle equals the number of columns.
+ * @param {number} [$uncycle=0] - Undo a previous cycle value to allow for a new one.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * An alias for the column mixin.
+ * @param [$args...] - All arguments get passed through to column().
+ */
+/**
+ * Get the width of a column and nothing else.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Get the gutter size of a column and nothing else.
+ * @param {number} [ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [gutter=jeet.gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * An alias for the column-width function.
+ * @param [$args...] - All arguments get passed through to column().
+ */
+/**
+ * An alias for the column-gutter function.
+ * @param [$args...] - All arguments get passed through to column().
+ */
+/**
+ * Style an element as a column without any gutters for a seamless row.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$offset=0] - A offset specified as a fraction (see $ratios).
+ * @param {number} [cycle=0] - Easily create an nth column grid where cycle equals the number of columns.
+ * @param {number} [uncycle=0] - Undo a previous cycle value to allow for a new one.
+ */
+/**
+ * Reorder columns without altering the HTML.
+ * @param {number} [$ratios=0] - Specify how far along you want the element to move.
+ * @param {string} [$col-or-span=column] - Specify whether the element has a gutter or not.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Reset an element that has had shift() applied to it.
+ */
+/**
+ * View the grid and its layers for easy debugging.
+ * @param {string} [$color=black] - The background tint applied.
+ * @param {boolean} [$important=false] - Whether to apply the style as !important.
+ */
+/**
+ *  Alias for edit().
+ */
+/**
+ * Horizontally center an element.
+ * @param {number} [$max-width=1410px] - The max width the element can be.
+ * @param {number} [$pad=0] - Specify the element's left and right padding.
+ */
+/**
+ * Uncenter an element.
+ */
+/**
+ * Stack an element so that nothing is either side of it.
+ * @param {number} [$pad=0] - Specify the element's left and right padding.
+ * @param {boolean/string} [$align=false] - Specify the text align for the element.
+ */
+/**
+ * Unstack an element.
+ */
+/**
+ * Center an element on either or both axes.
+ * @requires A parent container with relative positioning.
+ * @param {string} [$direction=both] - Specify which axes to center the element on.
+ */
+/**
+ * Apply a clearfix to an element.
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Josefin Sans', sans-serif; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  margin-top: -3.9em;
+  background-color: honeydew; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a,
+a:active {
+  color: white;
+  text-decoration: none; }
+  a:hover,
+  a:active:hover {
+    text-shadow: 0 0 .2em black;
+    color: #00aa81;
+    transition: color .3s; }
+
+main {
+  width: auto;
+  max-width: 80%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0; }
+
+iframe {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  height: 15em;
+  z-index: 10; }
+  @media (max-width: 500px) {
+    iframe {
+      width: 90%;
+      margin-top: 2em; } }
+
+footer p {
+  font-size: 1em;
+  color: white;
+  font-weight: 100; }
+
+.pull-up-10 {
+  margin-top: 10em; }
+  @media (max-width: 1100px) {
+    .pull-up-10 {
+      width: 100%; } }
+
+.ng-valid,
+.ng-valid-email {
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  display: block;
+  padding: .8em;
+  width: 80%; }
+
+.usr-in-usr {
+  margin-top: 1em;
+  margin-bottom: 5em;
+  width: 100%; }
+
+.usr-info {
+  text-align: left;
+  margin-bottom: 10em;
+  margin: 0; }
+
+.usr-info li {
+  margin-bottom: .3em; }
+
+[for="song-input"] {
+  font-size: 2em; }
+
+.inputUrl {
+  border: none;
+  outline: none;
+  width: 50%;
+  padding: .6em; }
+
+[for="upload"] {
+  z-index: 3;
+  color: black; }
+
+.white-text {
+  color: antiquewhite; }
+
+.pretty {
+  color: #00aa81; }
+
+.inputUrl:focus {
+  box-shadow: 0 0 .1 white; }
+
+.icon-img {
+  width: 99%;
+  cursor: pointer; }
+
+.wide-btn {
+  width: 54%; }
+
+.submit {
+  width: 40%; }
+
+.top-fixed {
+  position: fixed;
+  left: 0;
+  top: 0; }
+
+.left-text {
+  text-align: left; }
+
+.center-text {
+  text-align: center; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left;
+  margin-left: 1.4em; }
+
+.full-width {
+  width: 100%; }
+
+.medium-img {
+  width: 80%; }
+
+.center-box {
+  margin-left: auto;
+  margin-right: auto; }
+
+.text-center {
+  text-align: center; }
+
+.songs-view {
+  width: 80%; }
+
+.box-fix {
+  box-sizing: border-box;
+  padding: .2em; }
+
+.pull-up {
+  margin-top: -2em; }
+
+.pull-up-4 {
+  margin-top: -4em; }
+
+.push-down {
+  margin-bottom: 1.4em; }
+
+.fix-ng-binding {
+  margin-top: -1.2em; }
+
+header {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+  background-color: #00AA81;
+  z-index: 2; }
+  header:last-child {
+    margin-right: 0; }
+  @media (max-width: 500px) {
+    header {
+      text-align: center;
+      box-shadow: 0 0 .5em; } }
+
+footer {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+  text-align: center;
+  padding: .2em;
+  background-color: #00AA81;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+  footer:last-child {
+    margin-right: 0; }
+
+.app-logo {
+  font-size: 3em;
+  color: white;
+  margin-top: .1em; }
+  @media (max-width: 1100px) {
+    .app-logo {
+      font-size: 2.5em; } }
+
+.main-nav-bar {
+  text-align: center;
+  padding: .2em;
+  background-color: #1C1D1C;
+  margin-top: 3.7em;
+  z-index: 2; }
+
+.nav-list li {
+  color: white;
+  font-size: 1.5em;
+  display: inline;
+  transition: all .2s;
+  margin: 4.5em; }
+  .nav-list li:hover {
+    color: #00aa81;
+    cursor: pointer; }
+
+.create-user-wrapper {
+  width: auto;
+  max-width: 60%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  background: #1C1D1C;
+  color: #00AA81;
+  margin-top: 7em;
+  z-index: -1;
+  -webkit-animation-duration: 8s; }
+  @media (max-width: 1100px) {
+    .create-user-wrapper {
+      width: auto;
+      max-width: 90%;
+      float: none;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 0;
+      padding-right: 0; } }
+
+.user-container {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+  overflow: hidden;
+  margin-top: -4em; }
+  .user-container:last-child {
+    margin-right: 0; }
+  @media (max-width: 1100px) {
+    .user-container {
+      margin-top: -6.5em; } }
+  @media (max-width: 500px) {
+    .user-container {
+      margin-top: 2em; } }
+
+.title-bg {
+  background-color: rgba(0, 170, 129, 0.12);
+  margin-top: -5em;
+  overflow: hidden;
+  padding-bottom: 1.4em; }
+  @media (max-width: 500px) {
+    .title-bg {
+      margin-top: -3em; } }
+
+.song-style-wrapper {
+  width: 100%;
+  margin-top: 4.1em;
+  margin-bottom: 5em; }
+  @media (max-width: 1100px) {
+    .song-style-wrapper {
+      width: 95%; } }
+  @media (max-width: 500px) {
+    .song-style-wrapper {
+      margin-top: 16em; } }
+
+.edit-user-box {
+  margin-top: -1em;
+  background: #1c1d1c;
+  width: 40%; }
+
+.user-position {
+  box-sizing: border-box;
+  padding: 2em;
+  margin-top: -1.5em;
+  background: #1c1d1c;
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 1100px) {
+    .user-position {
+      padding-bottom: 2.5em;
+      margin-top: -1em; } }
+  @media (max-width: 500px) {
+    .user-position {
+      margin-top: 4em; } }
+
+.vote-box {
+  border: 1px solid black;
+  width: 70px;
+  margin-top: -15.8em;
+  float: left;
+  background: #00aa81;
+  height: 10.5em;
+  z-index: -1;
+  margin-left: 4em; }
+  @media (max-width: 1100px) {
+    .vote-box {
+      width: 65px;
+      margin-left: 2em; } }
+  @media (max-width: 500px) {
+    .vote-box {
+      width: 60px;
+      height: 10em;
+      margin-top: -15em;
+      float: right;
+      transition: all .2s; }
+      .vote-box img {
+        width: 60%; } }
+
+.ng-binding {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 1.5em; }
+  @media (max-width: 500px) {
+    .ng-binding {
+      width: 100%; } }
+
+.song-points {
+  font-size: 1.3em;
+  margin-top: 1em; }
+
+.header-nav li {
+  display: inline-block; }
+
+.show-hidden-box {
+  box-shadow: 0 0 0.5 black;
+  position: absolute;
+  right: 0em;
+  bottom: 0; }
+
+.log-in-box {
+  display: inline-block; }
+
+.profile-info-box {
+  width: 100%;
+  background: #1c1d1c;
+  color: white;
+  padding-top: 2em;
+  margin-top: -4.2em;
+  margin-bottom: 1em;
+  position: relative;
+  height: 12em; }
+  @media (max-width: 1100px) {
+    .profile-info-box {
+      margin-top: -8em; } }
+
+.profile-info-box section {
+  font-size: 1.2em;
+  width: 50%;
+  height: 10em;
+  position: absolute;
+  top: 11em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+  @media (max-width: 1100px) {
+    .profile-info-box section {
+      left: 7em;
+      width: 60%;
+      text-align: left;
+      top: 6.5em; } }
+
+.profile-info-box div {
+  width: 20%;
+  left: 0;
+  top: 7em;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  background: #1c1d1c;
+  height: 1em;
+  font-size: 2em;
+  position: absolute;
+  border-radius: 1em; }
+
+.profile-pic {
+  position: absolute;
+  left: 1.5em;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 0;
+  box-shadow: 0 0 0.4em #00aa81;
+  width: 200px;
+  z-index: 1; }
+  @media (max-width: 1100px) {
+    .profile-pic {
+      top: .5em;
+      left: 1em;
+      border-radius: 0;
+      box-shadow: 0 0 0.1em #00aa81;
+      width: 150px; } }
+
+.votes-position {
+  color: white;
+  border-radius: .5em;
+  background: #1c1d1c;
+  position: fixed;
+  z-index: 101;
+  top: 1.5em;
+  width: 10%;
+  font-size: 2em;
+  right: 1em; }
+  @media (max-width: 1100px) {
+    .votes-position {
+      top: .8em;
+      background: #00aa81;
+      width: 12%; } }
+  @media (max-width: 500px) {
+    .votes-position {
+      right: 0;
+      top: 1.2em; } }
+
+.vote-icons {
+  position: absolute;
+  left: .8em;
+  bottom: 0; }
+
+.vote-icons img {
+  margin-top: 1em;
+  margin-bottom: .5em;
+  width: 100%;
+  display: block; }
+
+.user-points {
+  width: 15%;
+  font-size: 3em;
+  top: .6em;
+  border-radius: .7em;
+  right: .1em;
+  background: #1c1d1c;
+  z-index: 2; }
+  @media (max-width: 500px) {
+    .user-points {
+      width: 30%; } }
+
+.logOut-btn {
+  position: fixed;
+  right: .5em;
+  top: 1em;
+  width: 2%; }
+  @media (max-width: 1100px) {
+    .logOut-btn {
+      width: 3%; } }
+  @media (max-width: 500px) {
+    .logOut-btn {
+      top: 1.1em;
+      width: 4%; } }
+
+.createUser-form {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+  background-color: #1C1D1C;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+  .createUser-form:last-child {
+    margin-right: 0; }
+
+.enter-song-form {
+  margin-top: 3em;
+  background: #1C1D1C; }
+  @media (max-width: 500px) {
+    .enter-song-form {
+      margin-top: 10em;
+      float: left;
+      clear: none;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 3%; }
+      .enter-song-form:last-child {
+        margin-right: 0; } }
+
+.edit-usr-form {
+  margin-top: 0;
+  box-shadow: 0 0 0.3em #00aa81;
+  overflow: hidden; }
+  @media (max-width: 1100px) {
+    .edit-usr-form {
+      margin-top: 0;
+      width: 70%; } }
+
+.signIn-form {
+  width: 50%;
+  margin-top: 17em;
+  background: #1c1d1c; }
+  @media (max-width: 1100px) {
+    .signIn-form {
+      margin-top: 14em;
+      width: 85%; } }
+
+.signIn-form input {
+  width: 50%; }
+  @media (max-width: 1100px) {
+    .signIn-form input {
+      width: 70%; } }
+
+input,
+label,
+[type="submit"] {
+  color: #1c1d1c;
+  padding: .3em;
+  margin-top: .7em;
+  margin-bottom: .7em; }
+  input:focus,
+  label:focus,
+  [type="submit"]:focus {
+    box-shadow: 0 0 0.5em #00aa81; }
+
+input {
+  border-radius: .2em; }
+
+legend {
+  font-size: 2em;
+  color: white; }
+
+label {
+  font-size: 1.5em;
+  color: #00aa81; }
+
+fieldset {
+  text-align: center; }
+
+@media (max-width: 1100px) {
+  .main-content {
+    width: 100%; }
+
+  .usr-info {
+    margin-top: .5em;
+    font-size: 1.2em; }
+
+  .heart-icon {
+    width: 30%; }
+
+  .nav-list {
+    padding: 0; }
+
+  .nav-list li {
+    margin: 1em; }
+
+  .main-nav-bar {
+    margin: 0;
+    margin-top: 3.1em; }
+
+  .nav-list li:hover {
+    padding: 0; }
+
+  .wide-btn {
+    width: 74.4%; }
+
+  .title-bg {
+    margin-top: -7em; }
+
+  .usr-in-usr {
+    width: 100%; }
+
+  .user-points {
+    background: #1c1d1c;
+    color: white;
+    top: .6em;
+    right: .1em;
+    z-index: 2; }
+
+  .logOut-btn {
+    width: 3%; } }
+/*MOBILE*/
+@media (max-width: 600px) {
+  .alert {
+    background: #1c1d1c;
+    width: 100%;
+    height: auto; }
+
+  .nav-list li {
+    font-size: 1.2em; }
+
+  .icon-img {
+    width: 100%;
+    height: 2em;
+    cursor: pointer; }
+
+  .ng-scope {
+    margin-top: 2.8em;
+    transition: all .3s; }
+
+  /*form*/
+  .ng-valid,
+  .ng-valid-email {
+    border: none;
+    outline: none;
+    display: block;
+    width: 90%;
+    transition: all .3s; }
+
+  tainer {
+    margin-top: 2em; }
+
+  .usr-info {
+    margin-top: .5em;
+    font-size: 1.2em; }
+
+  .menu-show {
+    display: block;
+    font-size: 2em; }
+
+  .profile-info-box {
+    width: 100%;
+    margin-top: 2.5em; }
+
+  .profile-info-box section {
+    font-size: .9em;
+    left: 8.5em;
+    top: 7em; }
+
+  .profile-pic {
+    width: 100px; }
+
+  .signIn-form {
+    margin-top: 13em; }
+
+  .signIn-form input {
+    width: 80%; }
+
+  .wide-btn {
+    width: 86%; } }
+
+/*# sourceMappingURL=app.css.map */
