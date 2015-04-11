@@ -201,6 +201,16 @@ main {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0; }
+  @media (max-width: 1100px) {
+    main {
+      width: auto;
+      max-width: 100%;
+      float: none;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 0;
+      padding-right: 0; } }
 
 iframe {
   margin-top: 1em;
@@ -415,16 +425,12 @@ footer {
   width: 100%;
   margin-left: 0;
   margin-right: 3%;
-  overflow: hidden;
-  margin-top: -4em; }
+  overflow: hidden; }
   .user-container:last-child {
     margin-right: 0; }
-  @media (max-width: 1100px) {
-    .user-container {
-      margin-top: -6.5em; } }
   @media (max-width: 500px) {
     .user-container {
-      margin-top: 2em; } }
+      margin-top: -1.2em; } }
 
 .title-bg {
   background-color: rgba(0, 170, 129, 0.12);
@@ -465,6 +471,10 @@ footer {
   @media (max-width: 500px) {
     .user-position {
       margin-top: 4em; } }
+  .user-position img {
+    border-radius: 100%;
+    width: 20%;
+    margin: 0 auto; }
 
 .vote-box {
   border: 1px solid black;
@@ -737,9 +747,6 @@ fieldset {
 
   .title-bg {
     margin-top: -7em; }
-
-  .usr-in-usr {
-    width: 100%; }
 
   .user-points {
     background: #1c1d1c;
