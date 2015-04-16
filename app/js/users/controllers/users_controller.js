@@ -1,7 +1,7 @@
 module.exports = function(app) {
 
-  app.controller('usersController', ['$scope', 'resource', '$http', '$cookies', '$location', '$base64', '$sce',
-  function($scope, resource, $http, $cookies, $location, $base64, $sce) {
+  app.controller('usersController', ['$scope', 'resource', '$http', '$cookies', '$location', '$base64', '$sce', '$routeParams',
+  function($scope, resource, $http, $cookies, $location, $base64, $sce, $routeParams) {
 
 
     $scope.users = [];
@@ -18,6 +18,19 @@ module.exports = function(app) {
       $http({
         method: 'GET',
         url: '/user/currentuser'
+      })
+      .error(function(data) {
+       console.log(data);
+      })
+      .success(function(data) {
+        $scope.user = data;
+      });
+    };
+
+    $scope.getSpecificUser = function(userid) {
+      $http({
+        method: 'GET',
+        url: '/user/' + $routeParams.userid
       })
       .error(function(data) {
        console.log(data);

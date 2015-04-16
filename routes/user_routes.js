@@ -22,6 +22,17 @@ module.exports = function(app, passport, appSecret) {
     });
   });
 
+  //gets a specificed user
+  app.get('/user/:_id', function(req, res) {
+    User.find()
+    .where('_id').equals(req.params._id)
+    .exec(function (err, data) {
+      if (err) console.log(err);
+      console.log(data);
+      res.json(data);
+    })
+  });
+
   //creates new user in database
   app.post('/user', function(req, res) {
     var newUser = new User();
