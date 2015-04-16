@@ -8,12 +8,12 @@
           <li>{{user.basic.email}}</li>
           <li>{{user.bio}}</li>
         </ul>
+        <a href="#/specificUser/{{user._id}}">
+          <button class="users-btn profile-link">View Profile</button>
+        </a>
       </li>
       <li class="show-posted-songs-btn pull-up" data-ng-init='getSongs(user)'>
         <h3 class="pretty user-points">{{user.points + user.bonusPoints}} </h3>
-        <a href="#/specificUser/{{user._id}}">
-          <button class="users-btn">View Profile</button>
-        </a>
       </li>
     </ul>
   </div>

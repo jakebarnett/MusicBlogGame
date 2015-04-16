@@ -117,6 +117,10 @@
   border: none;
   cursor: pointer;}
 
+.profile-link{
+  float: right;
+}
+
 .pull-up{
   margin-top: -2em;}
 
