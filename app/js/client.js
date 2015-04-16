@@ -41,6 +41,10 @@ musicApp.config(['$routeProvider', function($routeProvider) {
     templateUrl: 'templates/users/profile_template.html',
     controller: 'usersController'
   })
+  .when('/specificUser/:userid' , {
+    templateUrl: 'templates/users/specific_user.html',
+    controller: 'usersController'
+  })
   .when('/sign_in', {
     templateUrl: 'templates/users/sign_in_template.html',
     controller: 'usersController'

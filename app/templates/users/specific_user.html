@@ -1,0 +1,20 @@
+<section data-ng-init="getSpecificUser()">
+  <section class="profile-info-box center-box">
+    <div class="push-down white-text">{{user.points + user.bonusPoints}}</div>
+    <section>
+      <h1 class="pretty">
+        {{user[0].username}}'s profile
+      </h1>
+      <ul>
+        <li class="fix-ng-binding"> Email: {{user[0].basic.email}}</li>
+        <li class="fix-ng-binding"> Bio: {{user[0].bio}}</li>
+      </ul>
+    </section>
+    <img class="profile-pic" src="{{user[0].avatar}}" alt="profile picture">
+  </section>
+  <section data-ng-if="user" data-ng-init="getSongs(user[0])">
+    <ul data-ng-repeat="song in user[0].songs">
+    <li ng-bind-html="deliberatelyTrustDangerousSnippet(song.songUrl)">{{song.songUrl}}</li>
+    </ul>
+  </section>
+</section>
