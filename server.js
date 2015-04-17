@@ -32,7 +32,7 @@ app.use('/', router);
 console.log('booya')
 
 //resets hasSubmitted and remainingVotes on a timer
-var resetVotes = schedule.scheduleJob({dayOfWeek: null, minute: null, hour: 1}, function(err) {
+var resetVotes = schedule.scheduleJob('0 0 * * *', function(err) {
   console.log('update timer working')
   if (err) console.log ('schedule: ' + err)
   User.update({}, {remainingVotes: 5, hasSubmitted: false}, {multi: true}, function(err) {
