@@ -14,14 +14,12 @@ module.exports = function(app) {
     $scope.upVote = function(song) {
       song.points = song.points + 1;
       Song.save(song, function() {
-        console.log('booya');
       });
     };
 
     $scope.downVote = function(song) {
       song.points = song.points - 1;
       Song.save(song, function() {
-        console.log('booya');
       });
     };
 
@@ -34,7 +32,6 @@ module.exports = function(app) {
     $scope.changeVotes = function(user) {
       user.remainingVotes = user.remainingVotes - 1;
       User.save(user, function() {
-        console.log('-1 vote')
       });
     }
 
@@ -42,7 +39,6 @@ module.exports = function(app) {
       if (user.remainingVotes < 1) {
         user.bonusPoints = user.bonusPoints + 5;
         User.save(user, function() {
-          console.log('happy');
         })
       }
     };
@@ -51,7 +47,6 @@ module.exports = function(app) {
       user.hasSubmitted = true;
       user.bonusPoints = user.bonusPoints + 5;
       User.save(user, function() {
-        console.log('submission accepted')
       })
     };
 

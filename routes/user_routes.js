@@ -28,7 +28,6 @@ module.exports = function(app, passport, appSecret) {
     .where('_id').equals(req.params._id)
     .exec(function (err, data) {
       if (err) console.log(err);
-      console.log(data);
       res.json(data);
     })
   });
@@ -42,11 +41,10 @@ module.exports = function(app, passport, appSecret) {
     newUser.avatar = req.body.avatar;
     newUser.bio = req.body.bio;
     newUser.save(function(err, user) {
-      if (err) res.status(500).send({msg: 'could not save user'}) //console.log(err);
+      if (err) res.status(500).send({msg: 'could not save user'})
 
       user.generateToken(appSecret, function(err, token) {
         if (err) return res.status(500).send({msg: 'could not generate token'});
-        console.log(token);
         res.json({eat: token});
       })
     });

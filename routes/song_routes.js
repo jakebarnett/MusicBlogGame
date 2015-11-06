@@ -12,11 +12,10 @@ module.exports = function(app, appSecret) {
 
   //creates a song
   app.post('/songs', eat_auth(appSecret), function(req, res) {
-    //console.log('routerUser:' + req.user);
     var newSong = new Song(req.body);
     newSong.postedBy = req.user._id;
     newSong.save(function(err, data) {
-      if (err) console.log(err); //res.status(500).send({msg: 'could not save song'});
+      if (err) console.log(err);
 
       res.json(data);
     });
@@ -37,7 +36,6 @@ module.exports = function(app, appSecret) {
         }
       }
       getTotal(data);
-      console.log(totalpoints);
       res.json({songs: data, points: totalpoints});
     });
   });
